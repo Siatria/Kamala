@@ -16,3 +16,38 @@ $input-bg: #F0F0F0
 body
   font-family: $font-lato-reg
 
+.content-width
+  width: 1180px
+  margin: 0 auto
+
+.welcome-block
+  background: url("../images/main-bg.jpg") no-repeat 50% 0
+  background-size: cover
+  height: 100vh
+  position: relative
+  display: flex
+  align-items: flex-end
+  padding-bottom: 114px
+  &:before
+    content: ''
+    @include blue-gradient
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    opacity: .5
+  .welcome-block-content
+    position: relative
+    h1
+      font-family: $font-abril
+      font-size: 106px
+      letter-spacing: -0.02em
+      line-height: 115px
+      color: $color-white
+      font-weight: 400
+    p
+      font-size: 38px
+      color: $color-white
+      font-family: $font-lato-bold
+      letter-spacing: 0.02em

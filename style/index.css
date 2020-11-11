@@ -3,4 +3,47 @@
 body {
   font-family: "Lato Regular", sans-serif; }
 
+.content-width {
+  width: 1180px;
+  margin: 0 auto; }
+
+.welcome-block {
+  background: url("../images/main-bg.jpg") no-repeat 50% 0;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 114px; }
+  .welcome-block:before {
+    content: "";
+    background: rgba(13, 153, 218, 0);
+    background: -moz-linear-gradient(top, rgba(13, 153, 218, 0) 0%, #0d99da 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(13, 153, 218, 0)), color-stop(100%, #0d99da));
+    background: -webkit-linear-gradient(top, rgba(13, 153, 218, 0) 0%, #0d99da 100%);
+    background: -o-linear-gradient(top, rgba(13, 153, 218, 0) 0%, #0d99da 100%);
+    background: -ms-linear-gradient(top, rgba(13, 153, 218, 0) 0%, #0d99da 100%);
+    background: linear-gradient(to bottom, rgba(13, 153, 218, 0) 0%, #0d99da 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d99da', endColorstr='#0d99da', GradientType=0 );
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.5; }
+  .welcome-block .welcome-block-content {
+    position: relative; }
+    .welcome-block .welcome-block-content h1 {
+      font-family: "Abril Fatface", sans-serif;
+      font-size: 106px;
+      letter-spacing: -0.02em;
+      line-height: 115px;
+      color: #FFF;
+      font-weight: 400; }
+    .welcome-block .welcome-block-content p {
+      font-size: 38px;
+      color: #FFF;
+      font-family: "Lato Bold", sans-serif;
+      letter-spacing: 0.02em; }
+
 /*# sourceMappingURL=index.css.map */
