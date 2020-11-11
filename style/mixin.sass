@@ -1,0 +1,94 @@
+@mixin transition($property, $duration, $timing)
+  -webkit-transition: $property $duration $timing
+  -moz-transition: $property $duration $timing
+  -o-transition: $property $duration $timing
+  transition: $property $duration $timing
+
+@mixin border-radius($radius)
+  -moz-border-radius: $radius
+  -webkit-border-radius: $radius
+  -khtml-border-radius: $radius
+  -o-border-radius: $radius
+  -ms-border-radius: $radius
+  border-radius: $radius
+
+@mixin translate($value,$value2)
+  -webkit-transform: translate($value,$value2)
+  -moz-transform: translate($value,$value2)
+  -o-transform: translate($value,$value2)
+  -ms-transform: translate($value,$value2)
+  transform: translate($value,$value2)
+
+@mixin transform-rotate($value)
+  transform: rotate($value)
+  -webkit-transform: rotate($value)
+  -moz-transform: rotate($value)
+  -o-transform: rotate($value)
+  -ms-transform: rotate($value)
+
+@mixin transform-skew($value1,$value2)
+  -webkit-transform: skew($value1,$value2)
+  -moz-transform: skew($value1,$value2)
+  -o-transform: skew($value1,$value2)
+  -ms-transform: skew($value1,$value2)
+  transform: skew($value1,$value2)
+
+@mixin transform-scale($value)
+  -webkit-transform: scale($value)
+  -moz-transform: scale($value)
+  -o-transform: scale($value)
+  -ms-transform: scale($value)
+  transform: scale($value)
+
+@mixin box-shadow($param, $color)
+  -webkit-box-shadow: $param $color
+  -moz-box-shadow: $param $color
+  box-shadow: $param $color
+
+@mixin box-shadow2($param, $color, $param2, $color2)
+  -webkit-box-shadow: $param $color, $param2 $color2
+  -moz-box-shadow: $param $color, $param2 $color2
+  box-shadow: $param $color, $param2 $color2
+
+@mixin blue-gradient
+  background: rgba(13,153,218,0)
+  background: -moz-linear-gradient(top, rgba(13,153,218,0) 0%, rgba(13,153,218,1) 100%)
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(13,153,218,0)), color-stop(100%, rgba(13,153,218,1)))
+  background: -webkit-linear-gradient(top, rgba(13,153,218,0) 0%, rgba(13,153,218,1) 100%)
+  background: -o-linear-gradient(top, rgba(13,153,218,0) 0%, rgba(13,153,218,1) 100%)
+  background: -ms-linear-gradient(top, rgba(13,153,218,0) 0%, rgba(13,153,218,1) 100%)
+  background: linear-gradient(to bottom, rgba(13,153,218,0) 0%, rgba(13,153,218,1) 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d99da', endColorstr='#0d99da', GradientType=0 )
+
+@mixin placeholder-form
+  &::-webkit-input-placeholder
+    color: #6D6E71
+    font-size: 14px
+  &:-moz-placeholder
+    color: #6D6E71
+    font-size: 14px
+  &::-moz-placeholder
+    color: #6D6E71
+    font-size: 14px
+  &:-ms-input-placeholder
+    color: #6D6E71
+    font-size: 14px
+
+$ex-small: 500px
+$small: 768px
+$medium: 992px
+$large: 1250px
+
+@mixin respond-to($media)
+  @if $media == mobile
+    @media only screen and (max-width: $ex-small)
+      @content
+  @else if $media == small-tablet
+    @media only screen and (max-width: $small)
+      @content
+  @else if $media == tablet
+    @media only screen and (max-width: $medium)
+      @content
+  @else if $media == desktop
+    @media only screen and (max-width: $large)
+      @content
