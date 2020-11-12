@@ -230,8 +230,28 @@ body {
           font-weight: 700;
           color: #1A1A1C; }
 
+.text-list {
+  margin-top: 19px; }
+  .text-list .text-list-item {
+    margin-bottom: 16px;
+    font-style: italic;
+    padding-left: 54px;
+    position: relative; }
+    .text-list .text-list-item:before {
+      content: "";
+      background: #10AEE5;
+      width: 30px;
+      height: 10px;
+      position: absolute;
+      top: 12px;
+      left: 0; }
+    .text-list .text-list-item:last-child {
+      margin-bottom: 0; }
+    .text-list .text-list-item span {
+      color: #1A1A1C; }
+
 .location {
-  padding: 68px 0 20px; }
+  padding: 68px 0 80px; }
   .location .content-width-10 {
     display: flex;
     justify-content: space-between;
@@ -245,25 +265,6 @@ body {
         font-size: 20px;
         color: #1A1A1C;
         letter-spacing: 0.03em; }
-      .location .content-width-10 .left-text .location-list {
-        margin-top: 19px; }
-        .location .content-width-10 .left-text .location-list .location-list-item {
-          margin-bottom: 16px;
-          font-style: italic;
-          padding-left: 54px;
-          position: relative; }
-          .location .content-width-10 .left-text .location-list .location-list-item:before {
-            content: "";
-            background: #10AEE5;
-            width: 30px;
-            height: 10px;
-            position: absolute;
-            top: 12px;
-            left: 0; }
-          .location .content-width-10 .left-text .location-list .location-list-item:last-child {
-            margin-bottom: 0; }
-          .location .content-width-10 .left-text .location-list .location-list-item span {
-            color: #1A1A1C; }
     .location .content-width-10 .location-img {
       width: 621px;
       position: relative;
@@ -280,5 +281,23 @@ body {
         position: absolute;
         bottom: -67px;
         right: -30px; }
+
+.project {
+  padding: 96px 0 90px; }
+  .project .content-width-10 .wrap {
+    margin-top: 53px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; }
+    .project .content-width-10 .wrap .project-img {
+      background: url("../images/project-img.png") no-repeat;
+      width: 621px;
+      height: 490px;
+      margin-left: -200px; }
+    .project .content-width-10 .wrap .right-text {
+      width: 51%;
+      margin-top: -6px; }
+      .project .content-width-10 .wrap .right-text .project-text {
+        margin: 0 0 40px; }
 
 /*# sourceMappingURL=index.css.map */
