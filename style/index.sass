@@ -4,21 +4,46 @@
 
 $font-abril: 'Abril Fatface', sans-serif
 $font-lato-reg: 'Lato Regular', sans-serif
-$font-lato-bold: 'Lato Bold', sans-serif
+$font-avenir: 'Avenir-Heavy', sans-serif
 
 $color-blue: #10AEE5
 $color-white: #FFF
 $color-black: #000
 $text-title-grey: #1A1A1C
-$text-grey-lighten: rgba(26,26,28,0.6)
+$text-grey-lighten: rgba(26,26,28,0.7)
 $input-bg: #F0F0F0
 
 body
   font-family: $font-lato-reg
 
-.content-width
+.content-width-12
   width: 1180px
   margin: 0 auto
+
+.content-width-10
+  width: 980px
+  margin: 0 auto
+
+.btn
+  background: $color-blue
+  padding: 20px 30px 22px
+  color: $color-white
+  text-transform: uppercase
+  font-family: $font-avenir
+  font-size: 18px
+  display: inline-block
+  letter-spacing: 0.03em
+
+.block-headline
+  font-size: 76px
+  color: $text-title-grey
+  font-family: $font-abril
+
+.text-info
+  font-size: 20px
+  line-height: 28px
+  color: $text-grey-lighten
+  letter-spacing: 0.02em
 
 .welcome-block
   background: url("../images/main-bg.jpg") no-repeat 50% 0
@@ -27,7 +52,7 @@ body
   position: relative
   display: flex
   align-items: flex-end
-  padding-bottom: 114px
+  padding-bottom: 100px
   &:before
     content: ''
     @include blue-gradient
@@ -39,7 +64,7 @@ body
     opacity: .5
   .welcome-block-content
     position: relative
-    h1
+    .welcome-title
       font-family: $font-abril
       font-size: 106px
       letter-spacing: -0.02em
@@ -49,5 +74,157 @@ body
     p
       font-size: 38px
       color: $color-white
-      font-family: $font-lato-bold
-      letter-spacing: 0.02em
+      font-family: $font-avenir
+.stats-wrap
+  width: 980px
+  margin: -55px auto 0
+  position: relative
+  text-align: center
+  .stats
+    background: $color-white
+    padding: 28px 50px 74px
+    @include box-shadow(0 42px 94px 0,rgba(26,26,26,.08))
+    text-align: left
+    margin-bottom: -31px
+    .top-line
+      display: flex
+      justify-content: space-between
+      align-items: center
+      .status,
+      .term,
+      .sum
+        font-size: 19px
+        line-height: 22px
+        color: $text-title-grey
+        letter-spacing: 0.01em
+        span
+          font-weight: 700
+      .status
+        margin-right: 46px
+      .sum
+        margin-left: auto
+        text-align: right
+        p
+          &:first-child
+            font-weight: 700
+    .progressbar
+      width: 100%
+      height: 10px
+      display: flex
+      margin: 30px 0 29px
+      .done
+        background: $color-blue
+        width: 88%
+      .total
+        background: $color-blue
+        opacity: .2
+        width: 12%
+    .count-data
+      display: flex
+      justify-content: space-between
+      .investors,
+      .days,
+      .yield,
+      .funded
+        span
+          font-size: 48px
+          color: $text-title-grey
+          display: block
+          letter-spacing: 0.02em
+        p
+          font-size: 18px
+          color: $text-title-grey
+          margin-top: 10px
+          letter-spacing: 0.03em
+      .investors,
+      .days
+        margin-right: 58px
+      .funded
+        margin-left: auto
+        text-align: right
+        span
+          color: $color-blue
+          letter-spacing: 0.03em
+  .stats-description
+    text-align: center
+    width: 55%
+    margin: 30px auto 0
+    font-size: 16px
+    line-height: 22px
+    letter-spacing: 0.02em
+    color: $text-grey-lighten
+    span
+      text-transform: uppercase
+      font-weight: 700
+.slider
+  padding-top: 85px
+  img
+    display: inline-block
+    width: 280px
+    height: 190px
+.opportunity
+  padding: 131px 0 100px
+  .content-width-10
+    .opportunity-list
+      margin-top: 45px
+      .opportunity-item
+        width: 260px
+        margin-right: 37px
+        display: inline-block
+        vertical-align: top
+        border-top: 10px solid $color-blue
+        padding-top: 15px
+        &:last-child
+          margin-right: 0
+        p
+          font-size: 20px
+          font-weight: 700
+          color: $text-title-grey
+          letter-spacing: 0.03em
+        p+p
+          margin-top: 16px
+          font-size: 28px
+          line-height: 34px
+          color: $text-grey-lighten
+          font-weight: 400
+          letter-spacing: 0.02em
+    .wrap
+      margin-top: 87px
+      display: flex
+      justify-content: space-between
+      .opportunity-img
+        width: 630px
+        height: 210px
+        overflow: hidden
+        display: flex
+        align-items: center
+        margin-left: -194px
+        img
+          width: 100%
+      .opportunity-text
+        width: 480px
+        margin-top: -9px
+.reasons
+  padding: 24px 0 50px
+  .content-width-10
+    .sub-block-headline
+      font-size: 38px
+      font-family: $font-avenir
+      margin-top: 3px
+    .reasons-list
+      margin-top: 45px
+      .reasons-item
+        width: 280px
+        display: inline-block
+        vertical-align: top
+        margin-right: 94px
+        padding-left: 28px
+        border-left: 10px solid $color-blue
+        &:last-child
+          margin-right: 0
+          width: 220px
+        p
+          margin-top: -8px
+          span
+            font-weight: 700
+            color: $text-title-grey
