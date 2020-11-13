@@ -6,10 +6,18 @@ body {
 .content-width-12 {
   width: 1180px;
   margin: 0 auto; }
+  @media only screen and (max-width: 1250px) {
+    .content-width-12 {
+      width: 100%;
+      padding: 0 36px; } }
 
 .content-width-10 {
   width: 980px;
   margin: 0 auto; }
+  @media only screen and (max-width: 1250px) {
+    .content-width-10 {
+      width: 100%;
+      padding: 0 36px; } }
 
 .btn {
   background: #10AEE5;
@@ -87,8 +95,7 @@ body {
       font-family: "Avenir-Heavy", sans-serif; }
 
 .stats-wrap {
-  width: 980px;
-  margin: -55px auto 0;
+  margin-top: -55px;
   position: relative;
   text-align: center; }
   .stats-wrap .stats {
@@ -182,6 +189,9 @@ body {
 
 .opportunity {
   padding: 131px 0 100px; }
+  @media only screen and (max-width: 1250px) {
+    .opportunity {
+      padding: 50px 0; } }
   .opportunity .content-width-10 .opportunity-list {
     margin-top: 45px; }
     .opportunity .content-width-10 .opportunity-list .opportunity-item {
@@ -216,11 +226,26 @@ body {
       display: flex;
       align-items: center;
       margin-left: -194px; }
-      .opportunity .content-width-10 .wrap .opportunity-img img {
-        width: 100%; }
+      @media only screen and (max-width: 1250px) {
+        .opportunity .content-width-10 .wrap .opportunity-img {
+          width: 620px; } }
+      .opportunity .content-width-10 .wrap .opportunity-img .img {
+        width: 100%;
+        height: 210px;
+        background: url("../images/opportunity-img.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; }
+        @media only screen and (max-width: 1250px) {
+          .opportunity .content-width-10 .wrap .opportunity-img .img {
+            background-attachment: scroll; } }
     .opportunity .content-width-10 .wrap .opportunity-text {
       width: 480px;
       margin-top: -9px; }
+      @media only screen and (max-width: 1250px) {
+        .opportunity .content-width-10 .wrap .opportunity-text {
+          width: 50%; } }
 
 .reasons {
   padding: 24px 0 50px; }
@@ -237,6 +262,9 @@ body {
       margin-right: 94px;
       padding-left: 28px;
       border-left: 10px solid #10AEE5; }
+      @media only screen and (max-width: 1250px) {
+        .reasons .content-width-10 .reasons-list .reasons-item {
+          margin-right: 65px; } }
       .reasons .content-width-10 .reasons-list .reasons-item:last-child {
         margin-right: 0;
         width: 220px; }
@@ -266,12 +294,19 @@ body {
 
 .location {
   padding: 68px 0 80px; }
+  @media only screen and (max-width: 1250px) {
+    .location {
+      padding: 30px 0;
+      overflow: hidden; } }
   .location .content-width-10 {
     display: flex;
     justify-content: space-between;
     align-items: flex-start; }
     .location .content-width-10 .left-text {
       width: 51%; }
+      @media only screen and (max-width: 1250px) {
+        .location .content-width-10 .left-text {
+          width: 48%; } }
       .location .content-width-10 .left-text .location-text {
         margin: 47px 0 43px; }
       .location .content-width-10 .left-text .location-list-title {
@@ -283,11 +318,19 @@ body {
       width: 621px;
       position: relative;
       margin: 134px -200px 0 0; }
+      @media only screen and (max-width: 1250px) {
+        .location .content-width-10 .location-img {
+          margin-right: -175px; } }
       .location .content-width-10 .location-img .location-map {
         background: url("../images/location-map.jpg") no-repeat;
         width: 621px;
         height: 403px;
         display: block; }
+        @media only screen and (max-width: 1250px) {
+          .location .content-width-10 .location-img .location-map {
+            width: 500px;
+            height: 325px;
+            background-size: contain; } }
       .location .content-width-10 .location-img .img {
         background: url("../images/location-img.jpg") no-repeat;
         width: 271px;
@@ -295,9 +338,16 @@ body {
         position: absolute;
         bottom: -67px;
         right: -30px; }
+        @media only screen and (max-width: 1250px) {
+          .location .content-width-10 .location-img .img {
+            bottom: -90px;
+            right: 60px; } }
 
 .project {
   padding: 96px 0 90px; }
+  @media only screen and (max-width: 1250px) {
+    .project {
+      padding: 40px 0; } }
   .project .content-width-10 .wrap {
     margin-top: 53px;
     display: flex;
@@ -316,6 +366,9 @@ body {
 
 .developer {
   padding: 45px 0 143px; }
+  @media only screen and (max-width: 1250px) {
+    .developer {
+      padding: 45px 0 60px; } }
   .developer .content-width-10 .wrap {
     margin-top: 47px;
     display: flex;

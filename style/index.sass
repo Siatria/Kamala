@@ -20,10 +20,16 @@ body
 .content-width-12
   width: 1180px
   margin: 0 auto
+  +respond-to(desktop)
+    width: 100%
+    padding: 0 36px
 
 .content-width-10
   width: 980px
   margin: 0 auto
+  +respond-to(desktop)
+    width: 100%
+    padding: 0 36px
 
 .btn
   background: $color-blue
@@ -88,8 +94,7 @@ body
       color: $color-white
       font-family: $font-avenir
 .stats-wrap
-  width: 980px
-  margin: -55px auto 0
+  margin-top: -55px
   position: relative
   text-align: center
   .stats
@@ -176,6 +181,8 @@ body
     height: 190px
 .opportunity
   padding: 131px 0 100px
+  +respond-to(desktop)
+    padding: 50px 0
   .content-width-10
     .opportunity-list
       margin-top: 45px
@@ -211,11 +218,23 @@ body
         display: flex
         align-items: center
         margin-left: -194px
-        img
+        +respond-to(desktop)
+          width: 620px
+        .img
           width: 100%
+          height: 210px
+          background: url("../images/opportunity-img.jpg")
+          background-attachment: fixed
+          background-position: center
+          background-repeat: no-repeat
+          background-size: cover
+          +respond-to(desktop)
+            background-attachment: scroll
       .opportunity-text
         width: 480px
         margin-top: -9px
+        +respond-to(desktop)
+          width: 50%
 .reasons
   padding: 24px 0 50px
   .content-width-10
@@ -232,6 +251,8 @@ body
         margin-right: 94px
         padding-left: 28px
         border-left: 10px solid $color-blue
+        +respond-to(desktop)
+          margin-right: 65px
         &:last-child
           margin-right: 0
           width: 220px
@@ -259,12 +280,17 @@ body
       margin-bottom: 0
 .location
   padding: 68px 0 80px
+  +respond-to(desktop)
+    padding: 30px 0
+    overflow: hidden
   .content-width-10
     display: flex
     justify-content: space-between
     align-items: flex-start
     .left-text
       width: 51%
+      +respond-to(desktop)
+        width: 48%
       .location-text
         margin: 47px 0 43px
       .location-list-title
@@ -276,11 +302,17 @@ body
       width: 621px
       position: relative
       margin: 134px -200px 0 0
+      +respond-to(desktop)
+        margin-right: -175px
       .location-map
         background: url("../images/location-map.jpg") no-repeat
         width: 621px
         height: 403px
         display: block
+        +respond-to(desktop)
+          width: 500px
+          height: 325px
+          background-size: contain
       .img
         background: url("../images/location-img.jpg") no-repeat
         width: 271px
@@ -288,8 +320,13 @@ body
         position: absolute
         bottom: -67px
         right: -30px
+        +respond-to(desktop)
+          bottom: -90px
+          right: 60px
 .project
   padding: 96px 0 90px
+  +respond-to(desktop)
+    padding: 40px 0
   .content-width-10
     .wrap
       margin-top: 53px
@@ -308,6 +345,8 @@ body
           margin: 0 0 40px
 .developer
   padding: 45px 0 143px
+  +respond-to(desktop)
+    padding: 45px 0 60px
   .content-width-10
     .wrap
       margin-top: 47px
