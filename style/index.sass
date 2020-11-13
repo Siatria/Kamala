@@ -318,9 +318,10 @@ body
         align-items: center
         justify-content: center
 .form-wrap
-  padding-bottom: 122px
+  padding-bottom: 118px
   .form-img
-    background: url("../images/register-img.jpg") no-repeat 50% 0
+    background: url("../images/register-img.jpg") no-repeat 50% 50%
+    background-size: cover
     width: 100%
     height: 462px
     display: flex
@@ -417,3 +418,45 @@ body
       left: 0
       right: 0
       margin: 0 auto
+.social
+  width: 503px
+  margin: 0 auto
+  padding-bottom: 75px
+  text-align: center
+  .social-title
+    font-size: 20px
+    color: $text-title-grey
+    position: relative
+    font-weight: 700
+    letter-spacing: 0.03em
+    &:before,
+    &:after
+      content: ''
+      background: rgba(26,26,28,0.15)
+      height: 2px
+      position: absolute
+      top: 48%
+      width: 40%
+    &:before
+      left: 0
+    &:after
+      right: 0
+  .social-list
+    margin-top: 38px
+    .social-item
+      display: inline-block
+      margin: 0 19px
+      a
+        font-size: 18px
+        color: $text-grey-lighten
+        text-transform: uppercase
+        font-family: $font-avenir
+        letter-spacing: 0.03em
+        +transition(color, .4s, linear)
+        &:hover
+          color: $color-blue
+.copyright
+  text-align: center
+  font-size: 11px
+  color: rgba(26,26,28,0.3)
+  padding-bottom: 77px
