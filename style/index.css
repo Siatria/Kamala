@@ -46,6 +46,10 @@ body {
   font-size: 76px;
   color: #1A1A1C;
   font-family: "Abril Fatface", sans-serif; }
+  @media only screen and (max-width: 992px) {
+    .block-headline {
+      font-size: 56px;
+      padding-left: 40px; } }
 
 .text-info {
   font-size: 20px;
@@ -64,6 +68,9 @@ body {
   display: flex;
   align-items: flex-end;
   padding-bottom: 100px; }
+  @media only screen and (max-width: 992px) {
+    .welcome-block {
+      padding-bottom: 112px; } }
   .welcome-block:before {
     content: "";
     background: rgba(13, 153, 218, 0);
@@ -82,6 +89,9 @@ body {
     opacity: 0.5; }
   .welcome-block .welcome-block-content {
     position: relative; }
+    @media only screen and (max-width: 992px) {
+      .welcome-block .welcome-block-content {
+        margin-left: 40px; } }
     .welcome-block .welcome-block-content .welcome-title {
       font-family: "Abril Fatface", sans-serif;
       font-size: 106px;
@@ -89,10 +99,17 @@ body {
       line-height: 115px;
       color: #FFF;
       font-weight: 400; }
+      @media only screen and (max-width: 992px) {
+        .welcome-block .welcome-block-content .welcome-title {
+          font-size: 86px; } }
     .welcome-block .welcome-block-content p {
       font-size: 38px;
       color: #FFF;
       font-family: "Avenir-Heavy", sans-serif; }
+      @media only screen and (max-width: 992px) {
+        .welcome-block .welcome-block-content p {
+          font-size: 34px;
+          margin-top: -7px; } }
 
 .stats-wrap {
   margin-top: -55px;
@@ -106,6 +123,9 @@ body {
     box-shadow: 0 42px 94px 0 rgba(26, 26, 26, 0.08);
     text-align: left;
     margin-bottom: -31px; }
+    @media only screen and (max-width: 992px) {
+      .stats-wrap .stats {
+        padding: 18px 40px 80px; } }
     .stats-wrap .stats .top-line {
       display: flex;
       justify-content: space-between;
@@ -117,6 +137,12 @@ body {
         line-height: 22px;
         color: #1A1A1C;
         letter-spacing: 0.01em; }
+        @media only screen and (max-width: 992px) {
+          .stats-wrap .stats .top-line .status,
+          .stats-wrap .stats .top-line .term,
+          .stats-wrap .stats .top-line .sum {
+            font-size: 18px;
+            letter-spacing: 0.03em; } }
         .stats-wrap .stats .top-line .status span,
         .stats-wrap .stats .top-line .term span,
         .stats-wrap .stats .top-line .sum span {
@@ -133,6 +159,9 @@ body {
       height: 10px;
       display: flex;
       margin: 30px 0 29px; }
+      @media only screen and (max-width: 992px) {
+        .stats-wrap .stats .progressbar {
+          margin: 21px 0 29px; } }
       .stats-wrap .stats .progressbar .done {
         background: #10AEE5;
         width: 88%; }
@@ -143,6 +172,9 @@ body {
     .stats-wrap .stats .count-data {
       display: flex;
       justify-content: space-between; }
+      @media only screen and (max-width: 992px) {
+        .stats-wrap .stats .count-data {
+          padding-left: 10px; } }
       .stats-wrap .stats .count-data .investors span,
       .stats-wrap .stats .count-data .days span,
       .stats-wrap .stats .count-data .yield span,
@@ -151,6 +183,12 @@ body {
         color: #1A1A1C;
         display: block;
         letter-spacing: 0.02em; }
+        @media only screen and (max-width: 992px) {
+          .stats-wrap .stats .count-data .investors span,
+          .stats-wrap .stats .count-data .days span,
+          .stats-wrap .stats .count-data .yield span,
+          .stats-wrap .stats .count-data .funded span {
+            font-size: 36px; } }
       .stats-wrap .stats .count-data .investors p,
       .stats-wrap .stats .count-data .days p,
       .stats-wrap .stats .count-data .yield p,
@@ -159,9 +197,19 @@ body {
         color: #1A1A1C;
         margin-top: 10px;
         letter-spacing: 0.03em; }
+        @media only screen and (max-width: 992px) {
+          .stats-wrap .stats .count-data .investors p,
+          .stats-wrap .stats .count-data .days p,
+          .stats-wrap .stats .count-data .yield p,
+          .stats-wrap .stats .count-data .funded p {
+            margin-top: 5px; } }
       .stats-wrap .stats .count-data .investors,
       .stats-wrap .stats .count-data .days {
         margin-right: 58px; }
+        @media only screen and (max-width: 992px) {
+          .stats-wrap .stats .count-data .investors,
+          .stats-wrap .stats .count-data .days {
+            margin-right: 31px; } }
       .stats-wrap .stats .count-data .funded {
         margin-left: auto;
         text-align: right; }
@@ -176,12 +224,18 @@ body {
     line-height: 22px;
     letter-spacing: 0.02em;
     color: rgba(26, 26, 28, 0.7); }
+    @media only screen and (max-width: 992px) {
+      .stats-wrap .stats-description {
+        width: 77%; } }
     .stats-wrap .stats-description span {
       text-transform: uppercase;
       font-weight: 700; }
 
 .slider {
   padding-top: 85px; }
+  @media only screen and (max-width: 992px) {
+    .slider {
+      padding-top: 70px; } }
   .slider img {
     display: inline-block;
     width: 280px;
@@ -191,9 +245,12 @@ body {
   padding: 131px 0 100px; }
   @media only screen and (max-width: 1250px) {
     .opportunity {
-      padding: 50px 0; } }
+      padding: 103px 0 82px; } }
   .opportunity .content-width-10 .opportunity-list {
     margin-top: 45px; }
+    @media only screen and (max-width: 992px) {
+      .opportunity .content-width-10 .opportunity-list {
+        margin-top: 57px; } }
     .opportunity .content-width-10 .opportunity-list .opportunity-item {
       width: 260px;
       margin-right: 37px;
@@ -201,6 +258,10 @@ body {
       vertical-align: top;
       border-top: 10px solid #10AEE5;
       padding-top: 15px; }
+      @media only screen and (max-width: 992px) {
+        .opportunity .content-width-10 .opportunity-list .opportunity-item {
+          width: 31%;
+          margin-right: 20px; } }
       .opportunity .content-width-10 .opportunity-list .opportunity-item:last-child {
         margin-right: 0; }
       .opportunity .content-width-10 .opportunity-list .opportunity-item p {
@@ -215,10 +276,21 @@ body {
         color: rgba(26, 26, 28, 0.7);
         font-weight: 400;
         letter-spacing: 0.02em; }
+        @media only screen and (max-width: 992px) {
+          .opportunity .content-width-10 .opportunity-list .opportunity-item p + p {
+            font-size: 24px;
+            line-height: 29px;
+            margin-top: 12px; } }
   .opportunity .content-width-10 .wrap {
     margin-top: 87px;
     display: flex;
     justify-content: space-between; }
+    @media only screen and (max-width: 992px) {
+      .opportunity .content-width-10 .wrap {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 68px; } }
     .opportunity .content-width-10 .wrap .opportunity-img {
       width: 630px;
       height: 210px;
@@ -229,6 +301,11 @@ body {
       @media only screen and (max-width: 1250px) {
         .opportunity .content-width-10 .wrap .opportunity-img {
           width: 620px; } }
+      @media only screen and (max-width: 992px) {
+        .opportunity .content-width-10 .wrap .opportunity-img {
+          margin-left: 0;
+          width: 65%;
+          height: 152px; } }
       .opportunity .content-width-10 .wrap .opportunity-img .img {
         width: 100%;
         height: 210px;
@@ -240,12 +317,19 @@ body {
         @media only screen and (max-width: 1250px) {
           .opportunity .content-width-10 .wrap .opportunity-img .img {
             background-attachment: scroll; } }
+        @media only screen and (max-width: 992px) {
+          .opportunity .content-width-10 .wrap .opportunity-img .img {
+            height: 152px; } }
     .opportunity .content-width-10 .wrap .opportunity-text {
       width: 480px;
       margin-top: -9px; }
       @media only screen and (max-width: 1250px) {
         .opportunity .content-width-10 .wrap .opportunity-text {
           width: 50%; } }
+      @media only screen and (max-width: 992px) {
+        .opportunity .content-width-10 .wrap .opportunity-text {
+          margin-top: 35px;
+          width: 65%; } }
 
 .reasons {
   padding: 24px 0 50px; }
@@ -253,8 +337,16 @@ body {
     font-size: 38px;
     font-family: "Avenir-Heavy", sans-serif;
     margin-top: 3px; }
+    @media only screen and (max-width: 992px) {
+      .reasons .content-width-10 .sub-block-headline {
+        padding-left: 40px;
+        font-size: 30px;
+        margin-top: 8px; } }
   .reasons .content-width-10 .reasons-list {
     margin-top: 45px; }
+    @media only screen and (max-width: 992px) {
+      .reasons .content-width-10 .reasons-list {
+        margin-top: 48px; } }
     .reasons .content-width-10 .reasons-list .reasons-item {
       width: 280px;
       display: inline-block;
@@ -265,6 +357,11 @@ body {
       @media only screen and (max-width: 1250px) {
         .reasons .content-width-10 .reasons-list .reasons-item {
           margin-right: 65px; } }
+      @media only screen and (max-width: 992px) {
+        .reasons .content-width-10 .reasons-list .reasons-item {
+          padding-left: 20px;
+          width: 31%;
+          margin-right: 16px; } }
       .reasons .content-width-10 .reasons-list .reasons-item:last-child {
         margin-right: 0;
         width: 220px; }
@@ -293,45 +390,77 @@ body {
       margin-bottom: 0; }
 
 .location {
-  padding: 68px 0 80px; }
+  padding: 68px 0 80px;
+  overflow: hidden; }
   @media only screen and (max-width: 1250px) {
     .location {
-      padding: 30px 0;
-      overflow: hidden; } }
-  .location .content-width-10 {
+      padding: 64px 0; } }
+  .location .content-width-10 .wrap {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; }
-    .location .content-width-10 .left-text {
+    align-items: flex-start;
+    margin-top: 47px; }
+    @media only screen and (max-width: 992px) {
+      .location .content-width-10 .wrap {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 41px; } }
+    .location .content-width-10 .wrap .left-text {
       width: 51%; }
       @media only screen and (max-width: 1250px) {
-        .location .content-width-10 .left-text {
+        .location .content-width-10 .wrap .left-text {
           width: 48%; } }
-      .location .content-width-10 .left-text .location-text {
-        margin: 47px 0 43px; }
-      .location .content-width-10 .left-text .location-list-title {
+      @media only screen and (max-width: 992px) {
+        .location .content-width-10 .wrap .left-text {
+          order: 2;
+          width: 88%;
+          margin-top: 40px; } }
+      .location .content-width-10 .wrap .left-text .location-text {
+        margin: 0 0 43px; }
+        @media only screen and (max-width: 992px) {
+          .location .content-width-10 .wrap .left-text .location-text {
+            margin-bottom: 50px; } }
+      .location .content-width-10 .wrap .left-text .location-list-title {
         font-weight: 700;
         font-size: 20px;
         color: #1A1A1C;
         letter-spacing: 0.03em; }
-    .location .content-width-10 .location-img {
+        @media only screen and (max-width: 992px) {
+          .location .content-width-10 .wrap .left-text .location-list-title {
+            padding-left: 78px; } }
+      @media only screen and (max-width: 992px) {
+        .location .content-width-10 .wrap .left-text .location-list {
+          padding-left: 78px;
+          width: 88%; } }
+    .location .content-width-10 .wrap .location-img {
       width: 621px;
       position: relative;
-      margin: 134px -200px 0 0; }
+      margin: 0 -200px 0 0; }
       @media only screen and (max-width: 1250px) {
-        .location .content-width-10 .location-img {
+        .location .content-width-10 .wrap .location-img {
           margin-right: -175px; } }
-      .location .content-width-10 .location-img .location-map {
+      @media only screen and (max-width: 992px) {
+        .location .content-width-10 .wrap .location-img {
+          order: 1;
+          width: 617px;
+          margin-right: 0; } }
+      .location .content-width-10 .wrap .location-img .location-map {
         background: url("../images/location-map.jpg") no-repeat;
         width: 621px;
         height: 403px;
         display: block; }
         @media only screen and (max-width: 1250px) {
-          .location .content-width-10 .location-img .location-map {
+          .location .content-width-10 .wrap .location-img .location-map {
             width: 500px;
             height: 325px;
             background-size: contain; } }
-      .location .content-width-10 .location-img .img {
+        @media only screen and (max-width: 992px) {
+          .location .content-width-10 .wrap .location-img .location-map {
+            width: 536px;
+            height: 344px;
+            background-size: cover; } }
+      .location .content-width-10 .wrap .location-img .img {
         background: url("../images/location-img.jpg") no-repeat;
         width: 271px;
         height: 171px;
@@ -339,42 +468,83 @@ body {
         bottom: -67px;
         right: -30px; }
         @media only screen and (max-width: 1250px) {
-          .location .content-width-10 .location-img .img {
+          .location .content-width-10 .wrap .location-img .img {
             bottom: -90px;
             right: 60px; } }
+        @media only screen and (max-width: 992px) {
+          .location .content-width-10 .wrap .location-img .img {
+            bottom: 37px;
+            right: 9px;
+            width: 233px;
+            height: 147px; } }
 
 .project {
   padding: 96px 0 90px; }
   @media only screen and (max-width: 1250px) {
     .project {
       padding: 40px 0; } }
+  @media only screen and (max-width: 992px) {
+    .project {
+      padding: 49px 0; } }
   .project .content-width-10 .wrap {
     margin-top: 53px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start; }
+    @media only screen and (max-width: 992px) {
+      .project .content-width-10 .wrap {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 42px; } }
     .project .content-width-10 .wrap .project-img {
       background: url("../images/project-img.png") no-repeat;
       width: 621px;
       height: 490px;
       margin-left: -200px; }
+      @media only screen and (max-width: 992px) {
+        .project .content-width-10 .wrap .project-img {
+          margin-left: 0;
+          width: 610px;
+          height: 481px;
+          background-size: cover; } }
     .project .content-width-10 .wrap .right-text {
       width: 51%;
       margin-top: -6px; }
+      @media only screen and (max-width: 992px) {
+        .project .content-width-10 .wrap .right-text {
+          margin-top: 54px;
+          width: 64%; } }
       .project .content-width-10 .wrap .right-text .project-text {
         margin: 0 0 40px; }
+        @media only screen and (max-width: 992px) {
+          .project .content-width-10 .wrap .right-text .project-text {
+            margin-bottom: 34px; } }
+      .project .content-width-10 .wrap .right-text .project-list .text-list-item {
+        padding-left: 49px; }
 
 .developer {
   padding: 45px 0 143px; }
   @media only screen and (max-width: 1250px) {
     .developer {
-      padding: 45px 0 60px; } }
+      padding: 61px 0 100px; } }
   .developer .content-width-10 .wrap {
     margin-top: 47px;
     display: flex;
     justify-content: space-between; }
+    @media only screen and (max-width: 992px) {
+      .developer .content-width-10 .wrap {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 41px; } }
     .developer .content-width-10 .wrap .developer-text {
       width: 54%; }
+      @media only screen and (max-width: 992px) {
+        .developer .content-width-10 .wrap .developer-text {
+          order: 2;
+          margin-top: 36px;
+          width: 65%; } }
       .developer .content-width-10 .wrap .developer-text p {
         margin-bottom: 22px; }
         .developer .content-width-10 .wrap .developer-text p:last-child {
@@ -386,9 +556,17 @@ body {
       display: flex;
       align-items: center;
       justify-content: center; }
+      @media only screen and (max-width: 992px) {
+        .developer .content-width-10 .wrap .developer-logo {
+          order: 1;
+          width: 616px;
+          height: 231px; } }
 
 .form-wrap {
   padding-bottom: 118px; }
+  @media only screen and (max-width: 992px) {
+    .form-wrap {
+      padding-bottom: 125px; } }
   .form-wrap .form-img {
     background: url("../images/register-img.jpg") no-repeat 50% 50%;
     background-size: cover;
@@ -397,12 +575,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center; }
+    @media only screen and (max-width: 992px) {
+      .form-wrap .form-img {
+        height: 345px; } }
     .form-wrap .form-img p {
       font-family: "Abril Fatface", sans-serif;
       font-size: 106px;
       color: #FFF;
       letter-spacing: -0.02em;
       margin-top: -20px; }
+      @media only screen and (max-width: 992px) {
+        .form-wrap .form-img p {
+          font-size: 67px; } }
   .form-wrap .register-form {
     margin: -57px auto 0;
     width: 816px;
@@ -414,6 +598,12 @@ body {
     box-shadow: 0 42px 94px 0 rgba(26, 26, 26, 0.08);
     position: relative;
     height: 247px; }
+    @media only screen and (max-width: 992px) {
+      .form-wrap .register-form {
+        width: 582px;
+        height: 237px;
+        margin-top: -39px;
+        padding: 36px 71px 76px; } }
     .form-wrap .register-form .hidden-wrap {
       display: none; }
     .form-wrap .register-form .form-title {
@@ -421,6 +611,9 @@ body {
       font-size: 30px;
       color: #1A1A1C;
       margin-bottom: 38px; }
+      @media only screen and (max-width: 992px) {
+        .form-wrap .register-form .form-title {
+          font-size: 24px; } }
     .form-wrap .register-form input[type=email],
     .form-wrap .register-form input[type=text],
     .form-wrap .register-form input[type=tel] {
@@ -523,6 +716,9 @@ body {
   margin: 0 auto;
   padding-bottom: 75px;
   text-align: center; }
+  @media only screen and (max-width: 992px) {
+    .social {
+      padding-bottom: 65px; } }
   .social .social-title {
     font-size: 20px;
     color: #1A1A1C;
