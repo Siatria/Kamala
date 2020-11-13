@@ -1,0 +1,26 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2020 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="alert" unicode="&#xe800;" d="M535 280c0-22-18-41-41-41l-4 0c-22 0-41 19-41 41l0 208c0 22 19 40 41 40l4 0c23 0 41-18 41-40l0-208z m-43-178c-23 0-42 19-42 42 0 23 19 42 42 42 23 0 42-19 42-42 0-23-19-42-42-42l0 0z m444-61l-406 704c-17 29-59 29-76 0l-406-704c-17-29 4-66 38-66l812 0c34 0 55 37 38 66l0 0z" horiz-adv-x="1000" />
+
+<glyph glyph-name="arrow-down" unicode="&#xe801;" d="M171 541c-19-20-19-53 0-73l325-345 324 345c19 20 19 53 1 73l0-1c-19 20-49 20-68 0l-257-273-257 273c-18 19-46 20-65 4l-3-3z" horiz-adv-x="1000" />
+
+<glyph glyph-name="arrow-left" unicode="&#xe802;" d="M645 675c-20 19-52 18-73-1l-344-324 344-324c21-19 53-19 73-1l-1 0c21 19 21 49 0 68l-273 257 273 257c19 17 20 46 4 65l-3 3z" horiz-adv-x="1000" />
+
+<glyph glyph-name="arrow-right" unicode="&#xe803;" d="M346 25c21-18 53-18 73 1l345 324-345 324c-20 19-53 20-73 1l1 0c-20-18-20-49 1-68l272-257-272-257c-19-17-21-45-4-64l2-4z" horiz-adv-x="1000" />
+
+<glyph glyph-name="check" unicode="&#xe805;" d="M438 105l-256 256c-20 20-20 53 0 73 20 21 53 21 74 0l182-182 374 374c20 21 53 21 73 0 21-20 21-53 0-73l-447-448z" horiz-adv-x="1000" />
+
+<glyph glyph-name="close" unicode="&#xe806;" d="M183 667c21 22 55 22 77 0l0 0 240-240 240 240c20 20 52 22 73 4l4-4c22-21 22-55 0-77l0 0-240-240 240-240c20-20 22-52 4-73l-4-4c-21-22-55-22-77 0l0 0-240 240-240-240c-20-20-52-22-73-4l-4 4c-22 21-22 55 0 77l0 0 240 240-240 240c-20 20-22 52-4 73z" horiz-adv-x="1000" />
+
+<glyph glyph-name="success" unicode="&#xe807;" d="M669 417l-181-182c-9-8-20-13-31-13-12 0-23 5-32 13l-96 97c-18 18-18 46 0 63 17 17 45 17 62 0l66-66 149 150c17 18 46 18 63 0 17-17 17-45 0-62m-169 308c-207 0-375-168-375-375 0-207 168-375 375-375 207 0 375 168 375 375 0 207-168 375-375 375" horiz-adv-x="1000" />
+
+<glyph glyph-name="burger" unicode="&#xe808;" d="M667 225c23 0 41-19 41-42 0-23-18-41-41-41l-500 0c-23 0-42 18-42 41 0 23 19 42 42 42l500 0z m166 333c23 0 42-18 42-41 0-23-19-42-42-42l-666 0c-23 0-42 19-42 42 0 23 19 41 42 41l666 0z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>
