@@ -31,6 +31,9 @@ body {
   line-height: 28px;
   color: rgba(26, 26, 28, 0.7);
   letter-spacing: 0.02em; }
+  .text-info span {
+    color: #1A1A1C;
+    font-weight: 700; }
 
 .welcome-block {
   background: url("../images/main-bg.jpg") no-repeat 50% 0;
@@ -247,8 +250,6 @@ body {
       left: 0; }
     .text-list .text-list-item:last-child {
       margin-bottom: 0; }
-    .text-list .text-list-item span {
-      color: #1A1A1C; }
 
 .location {
   padding: 68px 0 80px; }
@@ -299,5 +300,151 @@ body {
       margin-top: -6px; }
       .project .content-width-10 .wrap .right-text .project-text {
         margin: 0 0 40px; }
+
+.developer {
+  padding: 45px 0 143px; }
+  .developer .content-width-10 .wrap {
+    margin-top: 47px;
+    display: flex;
+    justify-content: space-between; }
+    .developer .content-width-10 .wrap .developer-text {
+      width: 54%; }
+      .developer .content-width-10 .wrap .developer-text p {
+        margin-bottom: 22px; }
+        .developer .content-width-10 .wrap .developer-text p:last-child {
+          margin-bottom: 0; }
+    .developer .content-width-10 .wrap .developer-logo {
+      width: 380px;
+      height: 380px;
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+
+.form-wrap {
+  padding-bottom: 122px; }
+  .form-wrap .form-img {
+    background: url("../images/register-img.jpg") no-repeat 50% 0;
+    width: 100%;
+    height: 462px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .form-wrap .form-img p {
+      font-family: "Abril Fatface", sans-serif;
+      font-size: 106px;
+      color: #FFF;
+      letter-spacing: -0.02em;
+      margin-top: -20px; }
+  .form-wrap .register-form {
+    margin: -57px auto 0;
+    width: 816px;
+    background: #FFF;
+    padding: 40px 190px 76px;
+    text-align: center;
+    -webkit-box-shadow: 0 42px 94px 0 rgba(26, 26, 26, 0.08);
+    -moz-box-shadow: 0 42px 94px 0 rgba(26, 26, 26, 0.08);
+    box-shadow: 0 42px 94px 0 rgba(26, 26, 26, 0.08);
+    position: relative;
+    height: 247px; }
+    .form-wrap .register-form .hidden-wrap {
+      display: none; }
+    .form-wrap .register-form .form-title {
+      font-family: "Avenir-Heavy", sans-serif;
+      font-size: 30px;
+      color: #1A1A1C;
+      margin-bottom: 38px; }
+    .form-wrap .register-form input[type=email],
+    .form-wrap .register-form input[type=text],
+    .form-wrap .register-form input[type=tel] {
+      width: 100%;
+      border: none;
+      font-size: 20px;
+      color: #1A1A1C;
+      background: #F6F6F6;
+      padding: 17px 20px 18px;
+      letter-spacing: 0.02em;
+      margin-bottom: 16px;
+      border-bottom: 4px solid transparent;
+      position: relative; }
+      .form-wrap .register-form input[type=email]::-webkit-input-placeholder,
+      .form-wrap .register-form input[type=text]::-webkit-input-placeholder,
+      .form-wrap .register-form input[type=tel]::-webkit-input-placeholder {
+        color: rgba(26, 26, 28, 0.5);
+        font-size: 20px; }
+      .form-wrap .register-form input[type=email]:-moz-placeholder,
+      .form-wrap .register-form input[type=text]:-moz-placeholder,
+      .form-wrap .register-form input[type=tel]:-moz-placeholder {
+        color: rgba(26, 26, 28, 0.5);
+        font-size: 20px; }
+      .form-wrap .register-form input[type=email]::-moz-placeholder,
+      .form-wrap .register-form input[type=text]::-moz-placeholder,
+      .form-wrap .register-form input[type=tel]::-moz-placeholder {
+        color: rgba(26, 26, 28, 0.5);
+        font-size: 20px; }
+      .form-wrap .register-form input[type=email]:-ms-input-placeholder,
+      .form-wrap .register-form input[type=text]:-ms-input-placeholder,
+      .form-wrap .register-form input[type=tel]:-ms-input-placeholder {
+        color: rgba(26, 26, 28, 0.5);
+        font-size: 20px; }
+      .form-wrap .register-form input[type=email]:hover,
+      .form-wrap .register-form input[type=text]:hover,
+      .form-wrap .register-form input[type=tel]:hover {
+        border-color: rgba(26, 26, 28, 0.1); }
+      .form-wrap .register-form input[type=email]:focus,
+      .form-wrap .register-form input[type=text]:focus,
+      .form-wrap .register-form input[type=tel]:focus {
+        border-color: #10AEE5; }
+    .form-wrap .register-form .input-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+      text-align: left; }
+      .form-wrap .register-form .input-wrap label {
+        font-size: 18px;
+        line-height: 24px;
+        color: #1A1A1C;
+        width: 185px;
+        letter-spacing: 0.02em; }
+      .form-wrap .register-form .input-wrap .select-amount,
+      .form-wrap .register-form .input-wrap .select-period {
+        width: 191px;
+        height: 62px;
+        background: #F6F6F6;
+        border: none;
+        color: #1A1A1C;
+        font-size: 20px;
+        padding: 10px 15px; }
+    .form-wrap .register-form .checkbox-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      text-align: left;
+      margin-top: 31px; }
+      .form-wrap .register-form .checkbox-wrap input[type=checkbox] {
+        width: 24px;
+        height: 24px;
+        background: #F6F6F6; }
+      .form-wrap .register-form .checkbox-wrap label {
+        width: 91.3%;
+        font-size: 16px;
+        color: rgba(26, 26, 28, 0.7);
+        letter-spacing: 0.02em; }
+        .form-wrap .register-form .checkbox-wrap label .link {
+          color: #10AEE5; }
+          .form-wrap .register-form .checkbox-wrap label .link:hover {
+            text-decoration: underline; }
+    .form-wrap .register-form .checkbox-wrap + .checkbox-wrap {
+      margin: 0; }
+    .form-wrap .register-form .form-btn {
+      border: none;
+      cursor: pointer;
+      position: absolute;
+      bottom: -31px;
+      left: 0;
+      right: 0;
+      margin: 0 auto; }
 
 /*# sourceMappingURL=index.css.map */
