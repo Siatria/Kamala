@@ -19,7 +19,20 @@ body {
   font-family: "Avenir-Heavy", sans-serif;
   font-size: 18px;
   display: inline-block;
-  letter-spacing: 0.03em; }
+  letter-spacing: 0.03em;
+  -webkit-transition: background 0.5s linear;
+  -moz-transition: background 0.5s linear;
+  -o-transition: background 0.5s linear;
+  transition: background 0.5s linear;
+  -webkit-transition-property: box-shadow, background;
+  -o-transition-property: box-shadow, background;
+  -moz-transition-property: box-shadow, background;
+  transition-property: box-shadow, background; }
+  .btn:hover {
+    background: #25C6FF;
+    -webkit-box-shadow: 0 6px 24px 0 rgba(91, 211, 255, 0.6);
+    -moz-box-shadow: 0 6px 24px 0 rgba(91, 211, 255, 0.6);
+    box-shadow: 0 6px 24px 0 rgba(91, 211, 255, 0.6); }
 
 .block-headline {
   font-size: 76px;
@@ -367,7 +380,11 @@ body {
       letter-spacing: 0.02em;
       margin-bottom: 16px;
       border-bottom: 4px solid transparent;
-      position: relative; }
+      position: relative;
+      -webkit-transition: border-color 0.4s linear;
+      -moz-transition: border-color 0.4s linear;
+      -o-transition: border-color 0.4s linear;
+      transition: border-color 0.4s linear; }
       .form-wrap .register-form input[type=email]::-webkit-input-placeholder,
       .form-wrap .register-form input[type=text]::-webkit-input-placeholder,
       .form-wrap .register-form input[type=tel]::-webkit-input-placeholder {

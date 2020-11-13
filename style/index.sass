@@ -7,6 +7,7 @@ $font-lato-reg: 'Lato Regular', sans-serif
 $font-avenir: 'Avenir-Heavy', sans-serif
 
 $color-blue: #10AEE5
+$blue-hover: #25C6FF
 $color-white: #FFF
 $color-black: #000
 $text-title-grey: #1A1A1C
@@ -33,6 +34,14 @@ body
   font-size: 18px
   display: inline-block
   letter-spacing: 0.03em
+  +transition(background,.5s,linear)
+  -webkit-transition-property: box-shadow,background
+  -o-transition-property: box-shadow,background
+  -moz-transition-property: box-shadow,background
+  transition-property: box-shadow,background
+  &:hover
+    background: $blue-hover
+    +box-shadow(0 6px 24px 0, rgba(91,211,255,0.6))
 
 .block-headline
   font-size: 76px
@@ -363,6 +372,7 @@ body
       margin-bottom: 16px
       border-bottom: 4px solid transparent
       position: relative
+      +transition(border-color,.4s,linear)
       &:hover
         border-color: rgba(26,26,28,0.1)
       &:focus
@@ -452,7 +462,7 @@ body
         text-transform: uppercase
         font-family: $font-avenir
         letter-spacing: 0.03em
-        +transition(color, .4s, linear)
+        +transition(color,.4s,linear)
         &:hover
           color: $color-blue
 .copyright
