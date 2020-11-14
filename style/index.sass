@@ -23,6 +23,8 @@ body
   +respond-to(desktop)
     width: 100%
     padding: 0 36px
+  +respond-to(small-tablet)
+    padding: 0 20px
 
 .content-width-10
   width: 980px
@@ -30,6 +32,8 @@ body
   +respond-to(desktop)
     width: 100%
     padding: 0 36px
+  +respond-to(small-tablet)
+    padding: 0 20px
 
 .btn
   background: $color-blue
@@ -48,6 +52,13 @@ body
   &:hover
     background: $blue-hover
     +box-shadow(0 6px 24px 0, rgba(91,211,255,0.6))
+  +respond-to(tablet)
+    &:hover
+      background: $color-blue
+      box-shadow: none
+  +respond-to(mobile)
+    font-size: 15px
+    padding: 16px 27px 15px
 
 .block-headline
   font-size: 76px
@@ -56,12 +67,21 @@ body
   +respond-to(tablet)
     font-size: 56px
     padding-left: 40px
+  +respond-to(small-tablet)
+    padding-left: 0
+    font-size: 46px
+  +respond-to(mobile)
+    font-size: 36px
+    letter-spacing: -0.01em
 
 .text-info
   font-size: 20px
   line-height: 28px
   color: $text-grey-lighten
   letter-spacing: 0.02em
+  +respond-to(mobile)
+    font-size: 18px
+    line-height: 26px
   span
     color: $text-title-grey
     font-weight: 700
@@ -76,6 +96,10 @@ body
   padding-bottom: 100px
   +respond-to(tablet)
     padding-bottom: 112px
+  +respond-to(small-tablet)
+    padding-bottom: 90px
+  +respond-to(mobile)
+    padding-bottom: 55px
   &:before
     content: ''
     @include blue-gradient
@@ -89,6 +113,8 @@ body
     position: relative
     +respond-to(tablet)
       margin-left: 40px
+    +respond-to(small-tablet)
+      margin-left: 0
     .welcome-title
       font-family: $font-abril
       font-size: 106px
@@ -98,6 +124,12 @@ body
       font-weight: 400
       +respond-to(tablet)
         font-size: 86px
+      +respond-to(small-tablet)
+        font-size: 66px
+        line-height: 70px
+      +respond-to(mobile)
+        font-size: 46px
+        line-height: 50px
     p
       font-size: 38px
       color: $color-white
@@ -105,10 +137,17 @@ body
       +respond-to(tablet)
         font-size: 34px
         margin-top: -7px
+      +respond-to(small-tablet)
+        margin-top: 7px
+      +respond-to(mobile)
+        font-size: 22px
+        margin-top: 3px
 .stats-wrap
   margin-top: -55px
   position: relative
   text-align: center
+  +respond-to(mobile)
+    margin-top: -30px
   .stats
     background: $color-white
     padding: 28px 50px 74px
@@ -117,6 +156,11 @@ body
     margin-bottom: -31px
     +respond-to(tablet)
       padding: 18px 40px 80px
+    +respond-to(small-tablet)
+      padding-bottom: 60px
+    +respond-to(mobile)
+      padding: 14px 24px 60px
+      margin-bottom: -37px
     .top-line
       display: flex
       justify-content: space-between
@@ -131,6 +175,8 @@ body
         +respond-to(tablet)
           font-size: 18px
           letter-spacing: 0.03em
+        +respond-to(mobile)
+          font-size: 12px
         span
           font-weight: 700
       .status
@@ -141,6 +187,13 @@ body
         p
           &:first-child
             font-weight: 700
+        p+p
+          +respond-to(mobile)
+            margin-top: -7px
+      .wrap
+        display: flex
+        +respond-to(small-tablet)
+          display: block
     .progressbar
       width: 100%
       height: 10px
@@ -148,6 +201,8 @@ body
       margin: 30px 0 29px
       +respond-to(tablet)
         margin: 21px 0 29px
+      +respond-to(mobile)
+        margin: 11px 0 19px
       .done
         background: $color-blue
         width: 88%
@@ -160,6 +215,12 @@ body
       justify-content: space-between
       +respond-to(tablet)
         padding-left: 10px
+      +respond-to(small-tablet)
+        padding-left: 0
+        flex-wrap: wrap
+        justify-content: center
+      +respond-to(mobile)
+        text-align: center
       .investors,
       .days,
       .yield,
@@ -171,6 +232,8 @@ body
           letter-spacing: 0.02em
           +respond-to(tablet)
             font-size: 36px
+          +respond-to(mobile)
+            font-size: 24px
         p
           font-size: 18px
           color: $text-title-grey
@@ -178,14 +241,27 @@ body
           letter-spacing: 0.03em
           +respond-to(tablet)
             margin-top: 5px
+          +respond-to(mobile)
+            font-size: 12px
       .investors,
       .days
         margin-right: 58px
         +respond-to(tablet)
           margin-right: 31px
+        +respond-to(small-tablet)
+          margin-right: 61px
+        +respond-to(mobile)
+          margin-right: 30px
       .funded
         margin-left: auto
         text-align: right
+        +respond-to(small-tablet)
+          text-align: center
+          margin-left: 0
+          margin-top: 30px
+          width: 100%
+        +respond-to(mobile)
+          margin-top: 23px
         span
           color: $color-blue
           letter-spacing: 0.03em
@@ -199,6 +275,11 @@ body
     color: $text-grey-lighten
     +respond-to(tablet)
       width: 77%
+    +respond-to(mobile)
+      margin-top: 27px
+      font-size: 14px
+      line-height: 20px
+      width: 71%
     span
       text-transform: uppercase
       font-weight: 700
@@ -206,6 +287,8 @@ body
   padding-top: 85px
   +respond-to(tablet)
     padding-top: 70px
+  +respond-to(mobile)
+    padding-top: 57px
   img
     display: inline-block
     width: 280px
@@ -214,11 +297,17 @@ body
   padding: 131px 0 100px
   +respond-to(desktop)
     padding: 103px 0 82px
+  +respond-to(small-tablet)
+    padding: 50px 0 30px
+  +respond-to(mobile)
+    padding: 51px 0 30px
   .content-width-10
     .opportunity-list
       margin-top: 45px
       +respond-to(tablet)
         margin-top: 57px
+      +respond-to(mobile)
+        margin-top: 33px
       .opportunity-item
         width: 260px
         margin-right: 37px
@@ -229,8 +318,17 @@ body
         +respond-to(tablet)
           width: 31%
           margin-right: 20px
+        +respond-to(small-tablet)
+          width: 30%
+          margin-right: 19px
+        +respond-to(mobile)
+          width: 100%
+          margin-right: 0
+          margin-bottom: 35px
         &:last-child
           margin-right: 0
+          +respond-to(mobile)
+            margin-bottom: 0
         p
           font-size: 20px
           font-weight: 700
@@ -247,6 +345,12 @@ body
             font-size: 24px
             line-height: 29px
             margin-top: 12px
+          +respond-to(small-tablet)
+            font-size: 21px
+            line-height: 26px
+          +respond-to(mobile)
+            font-size: 24px
+            line-height: 29px
     .wrap
       margin-top: 87px
       display: flex
@@ -256,6 +360,8 @@ body
         align-items: center
         justify-content: center
         margin-top: 68px
+      +respond-to(mobile)
+        margin-top: 49px
       .opportunity-img
         width: 630px
         height: 210px
@@ -269,6 +375,10 @@ body
           margin-left: 0
           width: 65%
           height: 152px
+        +respond-to(small-tablet)
+          width: 100%
+        +respond-to(mobile)
+          height: 128px
         .img
           width: 100%
           height: 210px
@@ -289,8 +399,14 @@ body
         +respond-to(tablet)
           margin-top: 35px
           width: 65%
+        +respond-to(small-tablet)
+          width: 100%
+        +respond-to(mobile)
+          margin-top: 23px
 .reasons
   padding: 24px 0 50px
+  +respond-to(small-tablet)
+    padding: 24px 0
   .content-width-10
     .sub-block-headline
       font-size: 38px
@@ -300,10 +416,16 @@ body
         padding-left: 40px
         font-size: 30px
         margin-top: 8px
+      +respond-to(small-tablet)
+        padding-left: 0
+      +respond-to(mobile)
+        font-size: 24px
     .reasons-list
       margin-top: 45px
       +respond-to(tablet)
         margin-top: 48px
+      +respond-to(mobile)
+        margin-top: 32px
       .reasons-item
         width: 280px
         display: inline-block
@@ -317,11 +439,21 @@ body
           padding-left: 20px
           width: 31%
           margin-right: 16px
+        +respond-to(small-tablet)
+          width: 100%
+          margin-right: 0
+          margin-bottom: 40px
+        +respond-to(mobile)
+          margin-bottom: 34px
         &:last-child
           margin-right: 0
           width: 220px
+          +respond-to(small-tablet)
+            margin-bottom: 0
         p
           margin-top: -8px
+          +respond-to(mobile)
+            margin-top: -6px
           span
             font-weight: 700
             color: $text-title-grey
@@ -332,6 +464,8 @@ body
     font-style: italic
     padding-left: 54px
     position: relative
+    +respond-to(mobile)
+      padding-left: 50px
     &:before
       content: ''
       background: $color-blue
@@ -347,6 +481,10 @@ body
   overflow: hidden
   +respond-to(desktop)
     padding: 64px 0
+  +respond-to(small-tablet)
+    padding: 30px 0
+  +respond-to(mobile)
+    padding: 34px 0
   .content-width-10
     .wrap
       display: flex
@@ -358,6 +496,8 @@ body
         align-items: center
         justify-content: center
         margin-top: 41px
+      +respond-to(mobile)
+        margin-top: 33px
       .left-text
         width: 51%
         +respond-to(desktop)
@@ -366,10 +506,16 @@ body
           order: 2
           width: 88%
           margin-top: 40px
+        +respond-to(small-tablet)
+          width: 100%
+        +respond-to(mobile)
+          margin-top: 18px
         .location-text
           margin: 0 0 43px
           +respond-to(tablet)
             margin-bottom: 50px
+          +respond-to(mobile)
+            margin-bottom: 34px
         .location-list-title
           font-weight: 700
           font-size: 20px
@@ -377,10 +523,17 @@ body
           letter-spacing: 0.03em
           +respond-to(tablet)
             padding-left: 78px
+          +respond-to(small-tablet)
+            padding-left: 0
+          +respond-to(mobile)
+            font-size: 18px
         .location-list
           +respond-to(tablet)
             padding-left: 78px
             width: 88%
+          +respond-to(small-tablet)
+            width: 100%
+            padding-left: 0
       .location-img
         width: 621px
         position: relative
@@ -391,6 +544,10 @@ body
           order: 1
           width: 617px
           margin-right: 0
+        +respond-to(small-tablet)
+          width: 461px
+        +respond-to(mobile)
+          width: 280px
         .location-map
           background: url("../images/location-map.jpg") no-repeat
           width: 621px
@@ -404,6 +561,12 @@ body
             width: 536px
             height: 344px
             background-size: cover
+          +respond-to(small-tablet)
+            width: 461px
+            height: 300px
+          +respond-to(mobile)
+            width: 280px
+            height: 165px
         .img
           background: url("../images/location-img.jpg") no-repeat
           width: 271px
@@ -419,12 +582,26 @@ body
             right: 9px
             width: 233px
             height: 147px
+          +respond-to(small-tablet)
+            bottom: -19px
+            right: -19px
+          +respond-to(mobile)
+            position: static
+            background-size: cover
+            width: 280px
+            height: 165px
+            display: block
 .project
   padding: 96px 0 90px
   +respond-to(desktop)
     padding: 40px 0
   +respond-to(tablet)
     padding: 49px 0
+  +respond-to(small-tablet)
+    padding: 30px 0
+    overflow: hidden
+  +respond-to(mobile)
+    padding: 20px 0 16px
   .content-width-10
     .wrap
       margin-top: 53px
@@ -446,16 +623,30 @@ body
           width: 610px
           height: 481px
           background-size: cover
+        +respond-to(small-tablet)
+          margin: 0 -30px
+          width: 543px
+          height: 427px
+        +respond-to(mobile)
+          margin: -17px -30px 0
+          width: 366px
+          height: 289px
       .right-text
         width: 51%
         margin-top: -6px
         +respond-to(tablet)
           margin-top: 54px
           width: 64%
+        +respond-to(small-tablet)
+          width: 100%
+        +respond-to(mobile)
+          margin-top: 25px
         .project-text
           margin: 0 0 40px
           +respond-to(tablet)
             margin-bottom: 34px
+          +respond-to(mobile)
+            margin-bottom: 22px
         .project-list
           .text-list-item
             padding-left: 49px
@@ -463,6 +654,8 @@ body
   padding: 45px 0 143px
   +respond-to(desktop)
     padding: 61px 0 100px
+  +respond-to(small-tablet)
+    padding: 40px 0 50px
   .content-width-10
     .wrap
       margin-top: 47px
@@ -473,14 +666,22 @@ body
         align-items: center
         justify-content: center
         margin-top: 41px
+      +respond-to(mobile)
+        margin-top: 33px
       .developer-text
         width: 54%
         +respond-to(tablet)
           order: 2
           margin-top: 36px
           width: 65%
+        +respond-to(small-tablet)
+          width: 100%
+        +respond-to(mobile)
+          margin-top: 22px
         p
           margin-bottom: 22px
+          +respond-to(mobile)
+            margin-bottom: 20px
           &:last-child
             margin-bottom: 0
       .developer-logo
@@ -494,10 +695,20 @@ body
           order: 1
           width: 616px
           height: 231px
+        +respond-to(small-tablet)
+          width: 100%
+        +respond-to(mobile)
+          height: 150px
+          img
+            width: 55%
 .form-wrap
   padding-bottom: 118px
   +respond-to(tablet)
     padding-bottom: 125px
+  +respond-to(small-tablet)
+    padding-bottom: 80px
+  +respond-to(mobile)
+    padding-bottom: 75px
   .form-img
     background: url("../images/register-img.jpg") no-repeat 50% 50%
     background-size: cover
@@ -508,6 +719,8 @@ body
     align-items: center
     +respond-to(tablet)
       height: 345px
+    +respond-to(mobile)
+      height: 318px
     p
       font-family: $font-abril
       font-size: 106px
@@ -516,6 +729,11 @@ body
       margin-top: -20px
       +respond-to(tablet)
         font-size: 67px
+      +respond-to(mobile)
+        font-size: 47px
+        line-height: 51px
+        width: 90%
+        text-align: center
   .register-form
     margin: -57px auto 0
     width: 816px
@@ -530,6 +748,12 @@ body
       height: 237px
       margin-top: -39px
       padding: 36px 71px 76px
+    +respond-to(small-tablet)
+      width: 461px
+    +respond-to(mobile)
+      width: 280px
+      height: 150px
+      padding: 21px 20px 76px
     .hidden-wrap
       display: none
     .form-title
@@ -539,6 +763,9 @@ body
       margin-bottom: 38px
       +respond-to(tablet)
         font-size: 24px
+      +respond-to(mobile)
+        font-size: 18px
+        margin-bottom: 18px
     input[type=email],
     input[type=text],
     input[type=tel]
@@ -554,6 +781,8 @@ body
       border-bottom: 4px solid transparent
       position: relative
       +transition(border-color,.4s,linear)
+      +respond-to(mobile)
+        padding: 11px 16px 14px
       &:hover
         border-color: rgba(26,26,28,0.1)
       &:focus
@@ -564,12 +793,17 @@ body
       align-items: center
       margin-bottom: 16px
       text-align: left
+      +respond-to(mobile)
+        display: block
       label
         font-size: 18px
         line-height: 24px
         color: $text-title-grey
         width: 185px
         letter-spacing: 0.02em
+        +respond-to(mobile)
+          font-size: 16px
+          line-height: 20px
       .select-amount,
       .select-period
         width: 191px
@@ -579,6 +813,9 @@ body
         color: $text-title-grey
         font-size: 20px
         padding: 10px 15px
+        +respond-to(mobile)
+          width: 100%
+          margin-top: 10px
     .checkbox-wrap
       display: flex
       justify-content: space-between
@@ -595,6 +832,10 @@ body
         font-size: 16px
         color: $text-grey-lighten
         letter-spacing: 0.02em
+        +respond-to(small-tablet)
+          width: 89%
+        +respond-to(mobile)
+          width: 86%
         .link
           color: $color-blue
           &:hover
@@ -609,6 +850,8 @@ body
       left: 0
       right: 0
       margin: 0 auto
+      +respond-to(mobile)
+        bottom: -24px
 .social
   width: 503px
   margin: 0 auto
@@ -616,12 +859,19 @@ body
   text-align: center
   +respond-to(tablet)
     padding-bottom: 65px
+  +respond-to(small-tablet)
+    padding: 0 20px 65px
+    width: 100%
+  +respond-to(mobile)
+    padding-bottom: 58px
   .social-title
     font-size: 20px
     color: $text-title-grey
     position: relative
     font-weight: 700
     letter-spacing: 0.03em
+    +respond-to(mobile)
+      font-size: 16px
     &:before,
     &:after
       content: ''
@@ -630,15 +880,24 @@ body
       position: absolute
       top: 48%
       width: 40%
+      +respond-to(mobile)
+        width: 37%
     &:before
       left: 0
     &:after
       right: 0
   .social-list
     margin-top: 38px
+    +respond-to(mobile)
+      margin-top: 30px
     .social-item
       display: inline-block
       margin: 0 19px
+      +respond-to(mobile)
+        display: block
+        margin: 0 0 27px 0
+        &:last-child
+          margin-bottom: 0
       a
         font-size: 18px
         color: $text-grey-lighten
@@ -646,6 +905,8 @@ body
         font-family: $font-avenir
         letter-spacing: 0.03em
         +transition(color,.4s,linear)
+        +respond-to(mobile)
+          font-size: 16px
         &:hover
           color: $color-blue
 .copyright

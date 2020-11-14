@@ -10,6 +10,9 @@ body {
     .content-width-12 {
       width: 100%;
       padding: 0 36px; } }
+  @media only screen and (max-width: 768px) {
+    .content-width-12 {
+      padding: 0 20px; } }
 
 .content-width-10 {
   width: 980px;
@@ -18,6 +21,9 @@ body {
     .content-width-10 {
       width: 100%;
       padding: 0 36px; } }
+  @media only screen and (max-width: 768px) {
+    .content-width-10 {
+      padding: 0 20px; } }
 
 .btn {
   background: #10AEE5;
@@ -41,6 +47,14 @@ body {
     -webkit-box-shadow: 0 6px 24px 0 rgba(91, 211, 255, 0.6);
     -moz-box-shadow: 0 6px 24px 0 rgba(91, 211, 255, 0.6);
     box-shadow: 0 6px 24px 0 rgba(91, 211, 255, 0.6); }
+  @media only screen and (max-width: 992px) {
+    .btn:hover {
+      background: #10AEE5;
+      box-shadow: none; } }
+  @media only screen and (max-width: 500px) {
+    .btn {
+      font-size: 15px;
+      padding: 16px 27px 15px; } }
 
 .block-headline {
   font-size: 76px;
@@ -50,12 +64,24 @@ body {
     .block-headline {
       font-size: 56px;
       padding-left: 40px; } }
+  @media only screen and (max-width: 768px) {
+    .block-headline {
+      padding-left: 0;
+      font-size: 46px; } }
+  @media only screen and (max-width: 500px) {
+    .block-headline {
+      font-size: 36px;
+      letter-spacing: -0.01em; } }
 
 .text-info {
   font-size: 20px;
   line-height: 28px;
   color: rgba(26, 26, 28, 0.7);
   letter-spacing: 0.02em; }
+  @media only screen and (max-width: 500px) {
+    .text-info {
+      font-size: 18px;
+      line-height: 26px; } }
   .text-info span {
     color: #1A1A1C;
     font-weight: 700; }
@@ -71,6 +97,12 @@ body {
   @media only screen and (max-width: 992px) {
     .welcome-block {
       padding-bottom: 112px; } }
+  @media only screen and (max-width: 768px) {
+    .welcome-block {
+      padding-bottom: 90px; } }
+  @media only screen and (max-width: 500px) {
+    .welcome-block {
+      padding-bottom: 55px; } }
   .welcome-block:before {
     content: "";
     background: rgba(13, 153, 218, 0);
@@ -92,6 +124,9 @@ body {
     @media only screen and (max-width: 992px) {
       .welcome-block .welcome-block-content {
         margin-left: 40px; } }
+    @media only screen and (max-width: 768px) {
+      .welcome-block .welcome-block-content {
+        margin-left: 0; } }
     .welcome-block .welcome-block-content .welcome-title {
       font-family: "Abril Fatface", sans-serif;
       font-size: 106px;
@@ -102,6 +137,14 @@ body {
       @media only screen and (max-width: 992px) {
         .welcome-block .welcome-block-content .welcome-title {
           font-size: 86px; } }
+      @media only screen and (max-width: 768px) {
+        .welcome-block .welcome-block-content .welcome-title {
+          font-size: 66px;
+          line-height: 70px; } }
+      @media only screen and (max-width: 500px) {
+        .welcome-block .welcome-block-content .welcome-title {
+          font-size: 46px;
+          line-height: 50px; } }
     .welcome-block .welcome-block-content p {
       font-size: 38px;
       color: #FFF;
@@ -110,11 +153,21 @@ body {
         .welcome-block .welcome-block-content p {
           font-size: 34px;
           margin-top: -7px; } }
+      @media only screen and (max-width: 768px) {
+        .welcome-block .welcome-block-content p {
+          margin-top: 7px; } }
+      @media only screen and (max-width: 500px) {
+        .welcome-block .welcome-block-content p {
+          font-size: 22px;
+          margin-top: 3px; } }
 
 .stats-wrap {
   margin-top: -55px;
   position: relative;
   text-align: center; }
+  @media only screen and (max-width: 500px) {
+    .stats-wrap {
+      margin-top: -30px; } }
   .stats-wrap .stats {
     background: #FFF;
     padding: 28px 50px 74px;
@@ -126,6 +179,13 @@ body {
     @media only screen and (max-width: 992px) {
       .stats-wrap .stats {
         padding: 18px 40px 80px; } }
+    @media only screen and (max-width: 768px) {
+      .stats-wrap .stats {
+        padding-bottom: 60px; } }
+    @media only screen and (max-width: 500px) {
+      .stats-wrap .stats {
+        padding: 14px 24px 60px;
+        margin-bottom: -37px; } }
     .stats-wrap .stats .top-line {
       display: flex;
       justify-content: space-between;
@@ -143,6 +203,11 @@ body {
           .stats-wrap .stats .top-line .sum {
             font-size: 18px;
             letter-spacing: 0.03em; } }
+        @media only screen and (max-width: 500px) {
+          .stats-wrap .stats .top-line .status,
+          .stats-wrap .stats .top-line .term,
+          .stats-wrap .stats .top-line .sum {
+            font-size: 12px; } }
         .stats-wrap .stats .top-line .status span,
         .stats-wrap .stats .top-line .term span,
         .stats-wrap .stats .top-line .sum span {
@@ -154,6 +219,14 @@ body {
         text-align: right; }
         .stats-wrap .stats .top-line .sum p:first-child {
           font-weight: 700; }
+        @media only screen and (max-width: 500px) {
+          .stats-wrap .stats .top-line .sum p + p {
+            margin-top: -7px; } }
+      .stats-wrap .stats .top-line .wrap {
+        display: flex; }
+        @media only screen and (max-width: 768px) {
+          .stats-wrap .stats .top-line .wrap {
+            display: block; } }
     .stats-wrap .stats .progressbar {
       width: 100%;
       height: 10px;
@@ -162,6 +235,9 @@ body {
       @media only screen and (max-width: 992px) {
         .stats-wrap .stats .progressbar {
           margin: 21px 0 29px; } }
+      @media only screen and (max-width: 500px) {
+        .stats-wrap .stats .progressbar {
+          margin: 11px 0 19px; } }
       .stats-wrap .stats .progressbar .done {
         background: #10AEE5;
         width: 88%; }
@@ -175,6 +251,14 @@ body {
       @media only screen and (max-width: 992px) {
         .stats-wrap .stats .count-data {
           padding-left: 10px; } }
+      @media only screen and (max-width: 768px) {
+        .stats-wrap .stats .count-data {
+          padding-left: 0;
+          flex-wrap: wrap;
+          justify-content: center; } }
+      @media only screen and (max-width: 500px) {
+        .stats-wrap .stats .count-data {
+          text-align: center; } }
       .stats-wrap .stats .count-data .investors span,
       .stats-wrap .stats .count-data .days span,
       .stats-wrap .stats .count-data .yield span,
@@ -189,6 +273,12 @@ body {
           .stats-wrap .stats .count-data .yield span,
           .stats-wrap .stats .count-data .funded span {
             font-size: 36px; } }
+        @media only screen and (max-width: 500px) {
+          .stats-wrap .stats .count-data .investors span,
+          .stats-wrap .stats .count-data .days span,
+          .stats-wrap .stats .count-data .yield span,
+          .stats-wrap .stats .count-data .funded span {
+            font-size: 24px; } }
       .stats-wrap .stats .count-data .investors p,
       .stats-wrap .stats .count-data .days p,
       .stats-wrap .stats .count-data .yield p,
@@ -203,6 +293,12 @@ body {
           .stats-wrap .stats .count-data .yield p,
           .stats-wrap .stats .count-data .funded p {
             margin-top: 5px; } }
+        @media only screen and (max-width: 500px) {
+          .stats-wrap .stats .count-data .investors p,
+          .stats-wrap .stats .count-data .days p,
+          .stats-wrap .stats .count-data .yield p,
+          .stats-wrap .stats .count-data .funded p {
+            font-size: 12px; } }
       .stats-wrap .stats .count-data .investors,
       .stats-wrap .stats .count-data .days {
         margin-right: 58px; }
@@ -210,9 +306,26 @@ body {
           .stats-wrap .stats .count-data .investors,
           .stats-wrap .stats .count-data .days {
             margin-right: 31px; } }
+        @media only screen and (max-width: 768px) {
+          .stats-wrap .stats .count-data .investors,
+          .stats-wrap .stats .count-data .days {
+            margin-right: 61px; } }
+        @media only screen and (max-width: 500px) {
+          .stats-wrap .stats .count-data .investors,
+          .stats-wrap .stats .count-data .days {
+            margin-right: 30px; } }
       .stats-wrap .stats .count-data .funded {
         margin-left: auto;
         text-align: right; }
+        @media only screen and (max-width: 768px) {
+          .stats-wrap .stats .count-data .funded {
+            text-align: center;
+            margin-left: 0;
+            margin-top: 30px;
+            width: 100%; } }
+        @media only screen and (max-width: 500px) {
+          .stats-wrap .stats .count-data .funded {
+            margin-top: 23px; } }
         .stats-wrap .stats .count-data .funded span {
           color: #10AEE5;
           letter-spacing: 0.03em; }
@@ -227,6 +340,12 @@ body {
     @media only screen and (max-width: 992px) {
       .stats-wrap .stats-description {
         width: 77%; } }
+    @media only screen and (max-width: 500px) {
+      .stats-wrap .stats-description {
+        margin-top: 27px;
+        font-size: 14px;
+        line-height: 20px;
+        width: 71%; } }
     .stats-wrap .stats-description span {
       text-transform: uppercase;
       font-weight: 700; }
@@ -236,6 +355,9 @@ body {
   @media only screen and (max-width: 992px) {
     .slider {
       padding-top: 70px; } }
+  @media only screen and (max-width: 500px) {
+    .slider {
+      padding-top: 57px; } }
   .slider img {
     display: inline-block;
     width: 280px;
@@ -246,11 +368,20 @@ body {
   @media only screen and (max-width: 1250px) {
     .opportunity {
       padding: 103px 0 82px; } }
+  @media only screen and (max-width: 768px) {
+    .opportunity {
+      padding: 50px 0 30px; } }
+  @media only screen and (max-width: 500px) {
+    .opportunity {
+      padding: 51px 0 30px; } }
   .opportunity .content-width-10 .opportunity-list {
     margin-top: 45px; }
     @media only screen and (max-width: 992px) {
       .opportunity .content-width-10 .opportunity-list {
         margin-top: 57px; } }
+    @media only screen and (max-width: 500px) {
+      .opportunity .content-width-10 .opportunity-list {
+        margin-top: 33px; } }
     .opportunity .content-width-10 .opportunity-list .opportunity-item {
       width: 260px;
       margin-right: 37px;
@@ -262,8 +393,20 @@ body {
         .opportunity .content-width-10 .opportunity-list .opportunity-item {
           width: 31%;
           margin-right: 20px; } }
+      @media only screen and (max-width: 768px) {
+        .opportunity .content-width-10 .opportunity-list .opportunity-item {
+          width: 30%;
+          margin-right: 19px; } }
+      @media only screen and (max-width: 500px) {
+        .opportunity .content-width-10 .opportunity-list .opportunity-item {
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: 35px; } }
       .opportunity .content-width-10 .opportunity-list .opportunity-item:last-child {
         margin-right: 0; }
+        @media only screen and (max-width: 500px) {
+          .opportunity .content-width-10 .opportunity-list .opportunity-item:last-child {
+            margin-bottom: 0; } }
       .opportunity .content-width-10 .opportunity-list .opportunity-item p {
         font-size: 20px;
         font-weight: 700;
@@ -281,6 +424,14 @@ body {
             font-size: 24px;
             line-height: 29px;
             margin-top: 12px; } }
+        @media only screen and (max-width: 768px) {
+          .opportunity .content-width-10 .opportunity-list .opportunity-item p + p {
+            font-size: 21px;
+            line-height: 26px; } }
+        @media only screen and (max-width: 500px) {
+          .opportunity .content-width-10 .opportunity-list .opportunity-item p + p {
+            font-size: 24px;
+            line-height: 29px; } }
   .opportunity .content-width-10 .wrap {
     margin-top: 87px;
     display: flex;
@@ -291,6 +442,9 @@ body {
         align-items: center;
         justify-content: center;
         margin-top: 68px; } }
+    @media only screen and (max-width: 500px) {
+      .opportunity .content-width-10 .wrap {
+        margin-top: 49px; } }
     .opportunity .content-width-10 .wrap .opportunity-img {
       width: 630px;
       height: 210px;
@@ -306,6 +460,12 @@ body {
           margin-left: 0;
           width: 65%;
           height: 152px; } }
+      @media only screen and (max-width: 768px) {
+        .opportunity .content-width-10 .wrap .opportunity-img {
+          width: 100%; } }
+      @media only screen and (max-width: 500px) {
+        .opportunity .content-width-10 .wrap .opportunity-img {
+          height: 128px; } }
       .opportunity .content-width-10 .wrap .opportunity-img .img {
         width: 100%;
         height: 210px;
@@ -330,9 +490,18 @@ body {
         .opportunity .content-width-10 .wrap .opportunity-text {
           margin-top: 35px;
           width: 65%; } }
+      @media only screen and (max-width: 768px) {
+        .opportunity .content-width-10 .wrap .opportunity-text {
+          width: 100%; } }
+      @media only screen and (max-width: 500px) {
+        .opportunity .content-width-10 .wrap .opportunity-text {
+          margin-top: 23px; } }
 
 .reasons {
   padding: 24px 0 50px; }
+  @media only screen and (max-width: 768px) {
+    .reasons {
+      padding: 24px 0; } }
   .reasons .content-width-10 .sub-block-headline {
     font-size: 38px;
     font-family: "Avenir-Heavy", sans-serif;
@@ -342,11 +511,20 @@ body {
         padding-left: 40px;
         font-size: 30px;
         margin-top: 8px; } }
+    @media only screen and (max-width: 768px) {
+      .reasons .content-width-10 .sub-block-headline {
+        padding-left: 0; } }
+    @media only screen and (max-width: 500px) {
+      .reasons .content-width-10 .sub-block-headline {
+        font-size: 24px; } }
   .reasons .content-width-10 .reasons-list {
     margin-top: 45px; }
     @media only screen and (max-width: 992px) {
       .reasons .content-width-10 .reasons-list {
         margin-top: 48px; } }
+    @media only screen and (max-width: 500px) {
+      .reasons .content-width-10 .reasons-list {
+        margin-top: 32px; } }
     .reasons .content-width-10 .reasons-list .reasons-item {
       width: 280px;
       display: inline-block;
@@ -362,11 +540,25 @@ body {
           padding-left: 20px;
           width: 31%;
           margin-right: 16px; } }
+      @media only screen and (max-width: 768px) {
+        .reasons .content-width-10 .reasons-list .reasons-item {
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: 40px; } }
+      @media only screen and (max-width: 500px) {
+        .reasons .content-width-10 .reasons-list .reasons-item {
+          margin-bottom: 34px; } }
       .reasons .content-width-10 .reasons-list .reasons-item:last-child {
         margin-right: 0;
         width: 220px; }
+        @media only screen and (max-width: 768px) {
+          .reasons .content-width-10 .reasons-list .reasons-item:last-child {
+            margin-bottom: 0; } }
       .reasons .content-width-10 .reasons-list .reasons-item p {
         margin-top: -8px; }
+        @media only screen and (max-width: 500px) {
+          .reasons .content-width-10 .reasons-list .reasons-item p {
+            margin-top: -6px; } }
         .reasons .content-width-10 .reasons-list .reasons-item p span {
           font-weight: 700;
           color: #1A1A1C; }
@@ -378,6 +570,9 @@ body {
     font-style: italic;
     padding-left: 54px;
     position: relative; }
+    @media only screen and (max-width: 500px) {
+      .text-list .text-list-item {
+        padding-left: 50px; } }
     .text-list .text-list-item:before {
       content: "";
       background: #10AEE5;
@@ -395,6 +590,12 @@ body {
   @media only screen and (max-width: 1250px) {
     .location {
       padding: 64px 0; } }
+  @media only screen and (max-width: 768px) {
+    .location {
+      padding: 30px 0; } }
+  @media only screen and (max-width: 500px) {
+    .location {
+      padding: 34px 0; } }
   .location .content-width-10 .wrap {
     display: flex;
     justify-content: space-between;
@@ -406,6 +607,9 @@ body {
         align-items: center;
         justify-content: center;
         margin-top: 41px; } }
+    @media only screen and (max-width: 500px) {
+      .location .content-width-10 .wrap {
+        margin-top: 33px; } }
     .location .content-width-10 .wrap .left-text {
       width: 51%; }
       @media only screen and (max-width: 1250px) {
@@ -416,11 +620,20 @@ body {
           order: 2;
           width: 88%;
           margin-top: 40px; } }
+      @media only screen and (max-width: 768px) {
+        .location .content-width-10 .wrap .left-text {
+          width: 100%; } }
+      @media only screen and (max-width: 500px) {
+        .location .content-width-10 .wrap .left-text {
+          margin-top: 18px; } }
       .location .content-width-10 .wrap .left-text .location-text {
         margin: 0 0 43px; }
         @media only screen and (max-width: 992px) {
           .location .content-width-10 .wrap .left-text .location-text {
             margin-bottom: 50px; } }
+        @media only screen and (max-width: 500px) {
+          .location .content-width-10 .wrap .left-text .location-text {
+            margin-bottom: 34px; } }
       .location .content-width-10 .wrap .left-text .location-list-title {
         font-weight: 700;
         font-size: 20px;
@@ -429,10 +642,20 @@ body {
         @media only screen and (max-width: 992px) {
           .location .content-width-10 .wrap .left-text .location-list-title {
             padding-left: 78px; } }
+        @media only screen and (max-width: 768px) {
+          .location .content-width-10 .wrap .left-text .location-list-title {
+            padding-left: 0; } }
+        @media only screen and (max-width: 500px) {
+          .location .content-width-10 .wrap .left-text .location-list-title {
+            font-size: 18px; } }
       @media only screen and (max-width: 992px) {
         .location .content-width-10 .wrap .left-text .location-list {
           padding-left: 78px;
           width: 88%; } }
+      @media only screen and (max-width: 768px) {
+        .location .content-width-10 .wrap .left-text .location-list {
+          width: 100%;
+          padding-left: 0; } }
     .location .content-width-10 .wrap .location-img {
       width: 621px;
       position: relative;
@@ -445,6 +668,12 @@ body {
           order: 1;
           width: 617px;
           margin-right: 0; } }
+      @media only screen and (max-width: 768px) {
+        .location .content-width-10 .wrap .location-img {
+          width: 461px; } }
+      @media only screen and (max-width: 500px) {
+        .location .content-width-10 .wrap .location-img {
+          width: 280px; } }
       .location .content-width-10 .wrap .location-img .location-map {
         background: url("../images/location-map.jpg") no-repeat;
         width: 621px;
@@ -460,6 +689,14 @@ body {
             width: 536px;
             height: 344px;
             background-size: cover; } }
+        @media only screen and (max-width: 768px) {
+          .location .content-width-10 .wrap .location-img .location-map {
+            width: 461px;
+            height: 300px; } }
+        @media only screen and (max-width: 500px) {
+          .location .content-width-10 .wrap .location-img .location-map {
+            width: 280px;
+            height: 165px; } }
       .location .content-width-10 .wrap .location-img .img {
         background: url("../images/location-img.jpg") no-repeat;
         width: 271px;
@@ -477,6 +714,17 @@ body {
             right: 9px;
             width: 233px;
             height: 147px; } }
+        @media only screen and (max-width: 768px) {
+          .location .content-width-10 .wrap .location-img .img {
+            bottom: -19px;
+            right: -19px; } }
+        @media only screen and (max-width: 500px) {
+          .location .content-width-10 .wrap .location-img .img {
+            position: static;
+            background-size: cover;
+            width: 280px;
+            height: 165px;
+            display: block; } }
 
 .project {
   padding: 96px 0 90px; }
@@ -486,6 +734,13 @@ body {
   @media only screen and (max-width: 992px) {
     .project {
       padding: 49px 0; } }
+  @media only screen and (max-width: 768px) {
+    .project {
+      padding: 30px 0;
+      overflow: hidden; } }
+  @media only screen and (max-width: 500px) {
+    .project {
+      padding: 20px 0 16px; } }
   .project .content-width-10 .wrap {
     margin-top: 53px;
     display: flex;
@@ -508,6 +763,16 @@ body {
           width: 610px;
           height: 481px;
           background-size: cover; } }
+      @media only screen and (max-width: 768px) {
+        .project .content-width-10 .wrap .project-img {
+          margin: 0 -30px;
+          width: 543px;
+          height: 427px; } }
+      @media only screen and (max-width: 500px) {
+        .project .content-width-10 .wrap .project-img {
+          margin: -17px -30px 0;
+          width: 366px;
+          height: 289px; } }
     .project .content-width-10 .wrap .right-text {
       width: 51%;
       margin-top: -6px; }
@@ -515,11 +780,20 @@ body {
         .project .content-width-10 .wrap .right-text {
           margin-top: 54px;
           width: 64%; } }
+      @media only screen and (max-width: 768px) {
+        .project .content-width-10 .wrap .right-text {
+          width: 100%; } }
+      @media only screen and (max-width: 500px) {
+        .project .content-width-10 .wrap .right-text {
+          margin-top: 25px; } }
       .project .content-width-10 .wrap .right-text .project-text {
         margin: 0 0 40px; }
         @media only screen and (max-width: 992px) {
           .project .content-width-10 .wrap .right-text .project-text {
             margin-bottom: 34px; } }
+        @media only screen and (max-width: 500px) {
+          .project .content-width-10 .wrap .right-text .project-text {
+            margin-bottom: 22px; } }
       .project .content-width-10 .wrap .right-text .project-list .text-list-item {
         padding-left: 49px; }
 
@@ -528,6 +802,9 @@ body {
   @media only screen and (max-width: 1250px) {
     .developer {
       padding: 61px 0 100px; } }
+  @media only screen and (max-width: 768px) {
+    .developer {
+      padding: 40px 0 50px; } }
   .developer .content-width-10 .wrap {
     margin-top: 47px;
     display: flex;
@@ -538,6 +815,9 @@ body {
         align-items: center;
         justify-content: center;
         margin-top: 41px; } }
+    @media only screen and (max-width: 500px) {
+      .developer .content-width-10 .wrap {
+        margin-top: 33px; } }
     .developer .content-width-10 .wrap .developer-text {
       width: 54%; }
       @media only screen and (max-width: 992px) {
@@ -545,8 +825,17 @@ body {
           order: 2;
           margin-top: 36px;
           width: 65%; } }
+      @media only screen and (max-width: 768px) {
+        .developer .content-width-10 .wrap .developer-text {
+          width: 100%; } }
+      @media only screen and (max-width: 500px) {
+        .developer .content-width-10 .wrap .developer-text {
+          margin-top: 22px; } }
       .developer .content-width-10 .wrap .developer-text p {
         margin-bottom: 22px; }
+        @media only screen and (max-width: 500px) {
+          .developer .content-width-10 .wrap .developer-text p {
+            margin-bottom: 20px; } }
         .developer .content-width-10 .wrap .developer-text p:last-child {
           margin-bottom: 0; }
     .developer .content-width-10 .wrap .developer-logo {
@@ -561,12 +850,26 @@ body {
           order: 1;
           width: 616px;
           height: 231px; } }
+      @media only screen and (max-width: 768px) {
+        .developer .content-width-10 .wrap .developer-logo {
+          width: 100%; } }
+      @media only screen and (max-width: 500px) {
+        .developer .content-width-10 .wrap .developer-logo {
+          height: 150px; }
+          .developer .content-width-10 .wrap .developer-logo img {
+            width: 55%; } }
 
 .form-wrap {
   padding-bottom: 118px; }
   @media only screen and (max-width: 992px) {
     .form-wrap {
       padding-bottom: 125px; } }
+  @media only screen and (max-width: 768px) {
+    .form-wrap {
+      padding-bottom: 80px; } }
+  @media only screen and (max-width: 500px) {
+    .form-wrap {
+      padding-bottom: 75px; } }
   .form-wrap .form-img {
     background: url("../images/register-img.jpg") no-repeat 50% 50%;
     background-size: cover;
@@ -578,6 +881,9 @@ body {
     @media only screen and (max-width: 992px) {
       .form-wrap .form-img {
         height: 345px; } }
+    @media only screen and (max-width: 500px) {
+      .form-wrap .form-img {
+        height: 318px; } }
     .form-wrap .form-img p {
       font-family: "Abril Fatface", sans-serif;
       font-size: 106px;
@@ -587,6 +893,12 @@ body {
       @media only screen and (max-width: 992px) {
         .form-wrap .form-img p {
           font-size: 67px; } }
+      @media only screen and (max-width: 500px) {
+        .form-wrap .form-img p {
+          font-size: 47px;
+          line-height: 51px;
+          width: 90%;
+          text-align: center; } }
   .form-wrap .register-form {
     margin: -57px auto 0;
     width: 816px;
@@ -604,6 +916,14 @@ body {
         height: 237px;
         margin-top: -39px;
         padding: 36px 71px 76px; } }
+    @media only screen and (max-width: 768px) {
+      .form-wrap .register-form {
+        width: 461px; } }
+    @media only screen and (max-width: 500px) {
+      .form-wrap .register-form {
+        width: 280px;
+        height: 150px;
+        padding: 21px 20px 76px; } }
     .form-wrap .register-form .hidden-wrap {
       display: none; }
     .form-wrap .register-form .form-title {
@@ -614,6 +934,10 @@ body {
       @media only screen and (max-width: 992px) {
         .form-wrap .register-form .form-title {
           font-size: 24px; } }
+      @media only screen and (max-width: 500px) {
+        .form-wrap .register-form .form-title {
+          font-size: 18px;
+          margin-bottom: 18px; } }
     .form-wrap .register-form input[type=email],
     .form-wrap .register-form input[type=text],
     .form-wrap .register-form input[type=tel] {
@@ -636,21 +960,46 @@ body {
       .form-wrap .register-form input[type=tel]::-webkit-input-placeholder {
         color: rgba(26, 26, 28, 0.5);
         font-size: 20px; }
+        @media only screen and (max-width: 500px) {
+          .form-wrap .register-form input[type=email]::-webkit-input-placeholder,
+          .form-wrap .register-form input[type=text]::-webkit-input-placeholder,
+          .form-wrap .register-form input[type=tel]::-webkit-input-placeholder {
+            font-size: 16px; } }
       .form-wrap .register-form input[type=email]:-moz-placeholder,
       .form-wrap .register-form input[type=text]:-moz-placeholder,
       .form-wrap .register-form input[type=tel]:-moz-placeholder {
         color: rgba(26, 26, 28, 0.5);
         font-size: 20px; }
+        @media only screen and (max-width: 500px) {
+          .form-wrap .register-form input[type=email]:-moz-placeholder,
+          .form-wrap .register-form input[type=text]:-moz-placeholder,
+          .form-wrap .register-form input[type=tel]:-moz-placeholder {
+            font-size: 16px; } }
       .form-wrap .register-form input[type=email]::-moz-placeholder,
       .form-wrap .register-form input[type=text]::-moz-placeholder,
       .form-wrap .register-form input[type=tel]::-moz-placeholder {
         color: rgba(26, 26, 28, 0.5);
         font-size: 20px; }
+        @media only screen and (max-width: 500px) {
+          .form-wrap .register-form input[type=email]::-moz-placeholder,
+          .form-wrap .register-form input[type=text]::-moz-placeholder,
+          .form-wrap .register-form input[type=tel]::-moz-placeholder {
+            font-size: 16px; } }
       .form-wrap .register-form input[type=email]:-ms-input-placeholder,
       .form-wrap .register-form input[type=text]:-ms-input-placeholder,
       .form-wrap .register-form input[type=tel]:-ms-input-placeholder {
         color: rgba(26, 26, 28, 0.5);
         font-size: 20px; }
+        @media only screen and (max-width: 500px) {
+          .form-wrap .register-form input[type=email]:-ms-input-placeholder,
+          .form-wrap .register-form input[type=text]:-ms-input-placeholder,
+          .form-wrap .register-form input[type=tel]:-ms-input-placeholder {
+            font-size: 16px; } }
+      @media only screen and (max-width: 500px) {
+        .form-wrap .register-form input[type=email],
+        .form-wrap .register-form input[type=text],
+        .form-wrap .register-form input[type=tel] {
+          padding: 11px 16px 14px; } }
       .form-wrap .register-form input[type=email]:hover,
       .form-wrap .register-form input[type=text]:hover,
       .form-wrap .register-form input[type=tel]:hover {
@@ -665,12 +1014,19 @@ body {
       align-items: center;
       margin-bottom: 16px;
       text-align: left; }
+      @media only screen and (max-width: 500px) {
+        .form-wrap .register-form .input-wrap {
+          display: block; } }
       .form-wrap .register-form .input-wrap label {
         font-size: 18px;
         line-height: 24px;
         color: #1A1A1C;
         width: 185px;
         letter-spacing: 0.02em; }
+        @media only screen and (max-width: 500px) {
+          .form-wrap .register-form .input-wrap label {
+            font-size: 16px;
+            line-height: 20px; } }
       .form-wrap .register-form .input-wrap .select-amount,
       .form-wrap .register-form .input-wrap .select-period {
         width: 191px;
@@ -680,6 +1036,11 @@ body {
         color: #1A1A1C;
         font-size: 20px;
         padding: 10px 15px; }
+        @media only screen and (max-width: 500px) {
+          .form-wrap .register-form .input-wrap .select-amount,
+          .form-wrap .register-form .input-wrap .select-period {
+            width: 100%;
+            margin-top: 10px; } }
     .form-wrap .register-form .checkbox-wrap {
       display: flex;
       justify-content: space-between;
@@ -696,6 +1057,12 @@ body {
         font-size: 16px;
         color: rgba(26, 26, 28, 0.7);
         letter-spacing: 0.02em; }
+        @media only screen and (max-width: 768px) {
+          .form-wrap .register-form .checkbox-wrap label {
+            width: 89%; } }
+        @media only screen and (max-width: 500px) {
+          .form-wrap .register-form .checkbox-wrap label {
+            width: 86%; } }
         .form-wrap .register-form .checkbox-wrap label .link {
           color: #10AEE5; }
           .form-wrap .register-form .checkbox-wrap label .link:hover {
@@ -710,6 +1077,9 @@ body {
       left: 0;
       right: 0;
       margin: 0 auto; }
+      @media only screen and (max-width: 500px) {
+        .form-wrap .register-form .form-btn {
+          bottom: -24px; } }
 
 .social {
   width: 503px;
@@ -719,12 +1089,22 @@ body {
   @media only screen and (max-width: 992px) {
     .social {
       padding-bottom: 65px; } }
+  @media only screen and (max-width: 768px) {
+    .social {
+      padding: 0 20px 65px;
+      width: 100%; } }
+  @media only screen and (max-width: 500px) {
+    .social {
+      padding-bottom: 58px; } }
   .social .social-title {
     font-size: 20px;
     color: #1A1A1C;
     position: relative;
     font-weight: 700;
     letter-spacing: 0.03em; }
+    @media only screen and (max-width: 500px) {
+      .social .social-title {
+        font-size: 16px; } }
     .social .social-title:before, .social .social-title:after {
       content: "";
       background: rgba(26, 26, 28, 0.15);
@@ -732,15 +1112,27 @@ body {
       position: absolute;
       top: 48%;
       width: 40%; }
+      @media only screen and (max-width: 500px) {
+        .social .social-title:before, .social .social-title:after {
+          width: 37%; } }
     .social .social-title:before {
       left: 0; }
     .social .social-title:after {
       right: 0; }
   .social .social-list {
     margin-top: 38px; }
+    @media only screen and (max-width: 500px) {
+      .social .social-list {
+        margin-top: 30px; } }
     .social .social-list .social-item {
       display: inline-block;
       margin: 0 19px; }
+      @media only screen and (max-width: 500px) {
+        .social .social-list .social-item {
+          display: block;
+          margin: 0 0 27px 0; }
+          .social .social-list .social-item:last-child {
+            margin-bottom: 0; } }
       .social .social-list .social-item a {
         font-size: 18px;
         color: rgba(26, 26, 28, 0.7);
@@ -751,6 +1143,9 @@ body {
         -moz-transition: color 0.4s linear;
         -o-transition: color 0.4s linear;
         transition: color 0.4s linear; }
+        @media only screen and (max-width: 500px) {
+          .social .social-list .social-item a {
+            font-size: 16px; } }
         .social .social-list .social-item a:hover {
           color: #10AEE5; }
 
