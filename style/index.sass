@@ -86,6 +86,51 @@ body
     color: $text-title-grey
     font-weight: 700
 
+.fixed
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  z-index: 2
+  display: none
+  background: $color-white
+  height: 68px
+  +box-shadow(0 0 40px 0,rgba(26,26,26,.12))
+  +respond-to(small-tablet)
+    height: 60px
+  +respond-to(mobile)
+    height: 50px
+  .content-width-10
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 100%
+    +respond-to(tablet)
+      justify-content: space-between
+    .logo
+      width: 147px
+      height: 19px
+      +respond-to(mobile)
+        width: 100px
+      img
+        width: 100%
+        height: auto
+    .header-register-btn
+      font-size: 13px
+      position: absolute
+      top: 14px
+      right: 0
+      padding: 13px 20px
+      +respond-to(desktop)
+        right: 20px
+      +respond-to(tablet)
+        position: static
+      +respond-to(mobile)
+        right: 10px
+        font-size: 12px
+        padding: 11px 15px
+
 .welcome-block
   background: url("../images/main-bg.jpg") no-repeat 50% 0
   background-size: cover

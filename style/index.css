@@ -86,6 +86,60 @@ body {
     color: #1A1A1C;
     font-weight: 700; }
 
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  display: none;
+  background: #FFF;
+  height: 68px;
+  -webkit-box-shadow: 0 0 40px 0 rgba(26, 26, 26, 0.12);
+  -moz-box-shadow: 0 0 40px 0 rgba(26, 26, 26, 0.12);
+  box-shadow: 0 0 40px 0 rgba(26, 26, 26, 0.12); }
+  @media only screen and (max-width: 768px) {
+    .fixed {
+      height: 60px; } }
+  @media only screen and (max-width: 500px) {
+    .fixed {
+      height: 50px; } }
+  .fixed .content-width-10 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; }
+    @media only screen and (max-width: 992px) {
+      .fixed .content-width-10 {
+        justify-content: space-between; } }
+    .fixed .content-width-10 .logo {
+      width: 147px;
+      height: 19px; }
+      @media only screen and (max-width: 500px) {
+        .fixed .content-width-10 .logo {
+          width: 100px; } }
+      .fixed .content-width-10 .logo img {
+        width: 100%;
+        height: auto; }
+    .fixed .content-width-10 .header-register-btn {
+      font-size: 13px;
+      position: absolute;
+      top: 14px;
+      right: 0;
+      padding: 13px 20px; }
+      @media only screen and (max-width: 1250px) {
+        .fixed .content-width-10 .header-register-btn {
+          right: 20px; } }
+      @media only screen and (max-width: 992px) {
+        .fixed .content-width-10 .header-register-btn {
+          position: static; } }
+      @media only screen and (max-width: 500px) {
+        .fixed .content-width-10 .header-register-btn {
+          right: 10px;
+          font-size: 12px;
+          padding: 11px 15px; } }
+
 .welcome-block {
   background: url("../images/main-bg.jpg") no-repeat 50% 0;
   background-size: cover;

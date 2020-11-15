@@ -5,6 +5,13 @@ $(document).ready(function () {
     $('.hidden-wrap').slideDown(300)
     $('.full-form').css('height', 'auto')
   })
+
+  $('.header-register-btn').click(function(){
+    let el = $(this).attr('href');
+    $('html,body').animate({
+      scrollTop: $(el).offset().top}, 1400);
+    return false;
+  });
 })
 
 $(function(){
@@ -37,7 +44,7 @@ $(function(){
 
       if ($(this).scrollTop() > progress - 500) {
         moveProgressBar()
-        if(as === 0) {
+        if (as === 0) {
           number_to("investors",0,45,2000);
           number_to("days",0,30,2000);
           number_to("yield",0,9,2000);
@@ -45,6 +52,20 @@ $(function(){
           as++
         }
       }
-    });
+    })
   }
+})
+
+$(window).on('scroll', function () {
+  let fixedHeaderTop = $('.opportunity').offset().top
+  let fixedHeaderBottom = $('.form-wrap').offset().top
+
+  $(function(e){
+    if ($(this).scrollTop() > fixedHeaderTop - 250) {
+      $('.fixed').fadeIn(300)
+    } if ($(this).scrollTop() > fixedHeaderBottom - 500) {
+      $('.fixed').fadeOut(300)
+      (e).stopPropagation()
+    }
+  })
 })
