@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,700&display=swap");
 body {
-  font-family: "Lato Regular", sans-serif; }
+  font-family: "Lato", sans-serif; }
 
 .content-width-12 {
   width: 1180px;
@@ -227,24 +227,28 @@ body {
         @media only screen and (max-width: 768px) {
           .stats-wrap .stats .top-line .wrap {
             display: block; } }
-    .stats-wrap .stats .progressbar {
+    .stats-wrap .stats .progress {
       width: 100%;
-      height: 10px;
-      display: flex;
-      margin: 30px 0 29px; }
+      height: 10px; }
+    .stats-wrap .stats .progress-wrap {
+      background: #10AEE5;
+      margin: 30px 0 29px;
+      overflow: hidden;
+      position: relative; }
       @media only screen and (max-width: 992px) {
-        .stats-wrap .stats .progressbar {
+        .stats-wrap .stats .progress-wrap {
           margin: 21px 0 29px; } }
       @media only screen and (max-width: 500px) {
-        .stats-wrap .stats .progressbar {
+        .stats-wrap .stats .progress-wrap {
           margin: 11px 0 19px; } }
-      .stats-wrap .stats .progressbar .done {
-        background: #10AEE5;
-        width: 88%; }
-      .stats-wrap .stats .progressbar .total {
-        background: #10AEE5;
-        opacity: 0.2;
-        width: 12%; }
+      .stats-wrap .stats .progress-wrap .progress-bar {
+        background: #F6F6F6;
+        left: 0;
+        position: absolute;
+        top: 0; }
+        @media only screen and (max-width: 992px) {
+          .stats-wrap .stats .progress-wrap .progress-bar {
+            left: 96%; } }
     .stats-wrap .stats .count-data {
       display: flex;
       justify-content: space-between; }
@@ -329,6 +333,9 @@ body {
         .stats-wrap .stats .count-data .funded span {
           color: #10AEE5;
           letter-spacing: 0.03em; }
+      .stats-wrap .stats .count-data .yield span span,
+      .stats-wrap .stats .count-data .funded span span {
+        display: inline-block; }
   .stats-wrap .stats-description {
     text-align: center;
     width: 55%;
@@ -568,6 +575,7 @@ body {
   .text-list .text-list-item {
     margin-bottom: 16px;
     font-style: italic;
+    font-family: "Lato Regular", sans-serif;
     padding-left: 54px;
     position: relative; }
     @media only screen and (max-width: 500px) {

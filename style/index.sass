@@ -3,7 +3,7 @@
 @import "mixin"
 
 $font-abril: 'Abril Fatface', sans-serif
-$font-lato-reg: 'Lato Regular', sans-serif
+$font-lato-reg: 'Lato', sans-serif
 $font-avenir: 'Avenir-Heavy', sans-serif
 
 $color-blue: #10AEE5
@@ -194,22 +194,25 @@ body
         display: flex
         +respond-to(small-tablet)
           display: block
-    .progressbar
+    .progress
       width: 100%
       height: 10px
-      display: flex
+    .progress-wrap
+      background: $color-blue
       margin: 30px 0 29px
+      overflow: hidden
+      position: relative
       +respond-to(tablet)
         margin: 21px 0 29px
       +respond-to(mobile)
         margin: 11px 0 19px
-      .done
-        background: $color-blue
-        width: 88%
-      .total
-        background: $color-blue
-        opacity: .2
-        width: 12%
+      .progress-bar
+        background: $input-bg
+        left: 0
+        position: absolute
+        top: 0
+        +respond-to(tablet)
+          left: 96%
     .count-data
       display: flex
       justify-content: space-between
@@ -265,6 +268,11 @@ body
         span
           color: $color-blue
           letter-spacing: 0.03em
+      .yield,
+      .funded
+        span
+          span
+            display: inline-block
   .stats-description
     text-align: center
     width: 55%
@@ -462,6 +470,7 @@ body
   .text-list-item
     margin-bottom: 16px
     font-style: italic
+    font-family: "Lato Regular", sans-serif
     padding-left: 54px
     position: relative
     +respond-to(mobile)
