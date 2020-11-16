@@ -1254,7 +1254,18 @@ body {
         z-index: 1;
         -webkit-appearance: none;
         -moz-appearance: none;
-        appearance: none; }
+        appearance: none;
+        border-bottom: 4px solid transparent;
+        -webkit-transition: border-color 0.4s linear;
+        -moz-transition: border-color 0.4s linear;
+        -o-transition: border-color 0.4s linear;
+        transition: border-color 0.4s linear; }
+        .form-wrap .register-form .input-wrap .select-amount:hover,
+        .form-wrap .register-form .input-wrap .select-period:hover {
+          border-color: rgba(26, 26, 28, 0.1); }
+        .form-wrap .register-form .input-wrap .select-amount:focus,
+        .form-wrap .register-form .input-wrap .select-period:focus {
+          border-color: #10AEE5; }
         @media only screen and (max-width: 500px) {
           .form-wrap .register-form .input-wrap .select-amount,
           .form-wrap .register-form .input-wrap .select-period {

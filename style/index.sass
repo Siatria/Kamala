@@ -984,6 +984,12 @@ body
         -webkit-appearance: none
         -moz-appearance: none
         appearance: none
+        border-bottom: 4px solid transparent
+        +transition(border-color,.4s,linear)
+        &:hover
+          border-color: rgba(26,26,28,0.1)
+        &:focus
+          border-color: $color-blue
         +respond-to(mobile)
           width: 100%
           height: 52px
