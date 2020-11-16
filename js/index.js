@@ -31,7 +31,7 @@ $(document).ready(function () {
     navigationText: false,
     responsive: {
       320: {
-        items: 1,
+        items: 2,
         nav: false
       },
       400: {
