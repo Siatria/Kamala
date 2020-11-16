@@ -858,6 +858,7 @@ body
       padding: 36px 71px 76px
     +respond-to(small-tablet)
       width: 461px
+      padding: 36px 40px 76px
     +respond-to(mobile)
       width: 280px
       height: 150px
@@ -874,6 +875,19 @@ body
       +respond-to(mobile)
         font-size: 18px
         margin-bottom: 18px
+    .email-wrap
+      position: relative
+      .icon-success,
+      .icon-alert
+        color: #32B366
+        font-size: 25px
+        position: absolute
+        top: 17px
+        right: 15px
+        z-index: 1
+      .icon-alert
+        color: #DF021B
+        font-size: 23px
     input[type=email],
     input[type=text],
     input[type=tel]
@@ -882,7 +896,7 @@ body
       font-size: 20px
       color: $text-title-grey
       background: $input-bg
-      padding: 17px 20px 18px
+      padding: 17px 60px 18px 20px
       letter-spacing: 0.02em
       +placeholder-form
       margin-bottom: 16px
@@ -901,8 +915,21 @@ body
       align-items: center
       margin-bottom: 16px
       text-align: left
+      position: relative
+      &:before
+        content: '\e801'
+        font-family: fontello
+        color: $text-grey-lighten
+        position: absolute
+        top: 20px
+        right: 15px
+        font-size: 25px
+        opacity: .3
       +respond-to(mobile)
         display: block
+        &:before
+          top: auto
+          bottom: 10px
       label
         font-size: 18px
         line-height: 24px
@@ -921,9 +948,16 @@ body
         color: $text-title-grey
         font-size: 20px
         padding: 10px 15px
+        -webkit-appearance: none
+        -moz-appearance: none
+        appearance: none
         +respond-to(mobile)
           width: 100%
+          height: 52px
           margin-top: 10px
+        .option
+          &:hover
+            background: $blue-hover!important
     .checkbox-wrap
       display: flex
       justify-content: space-between
@@ -931,11 +965,31 @@ body
       margin-bottom: 20px
       text-align: left
       margin-top: 31px
-      input[type=checkbox]
-        width: 24px
-        height: 24px
-        background: $input-bg
-      label
+      .custom-checkbox
+        position: absolute
+        z-index: -1
+        opacity: 0
+      .custom-checkbox
+        + label
+          display: inline-flex
+          align-items: center
+          user-select: none
+        + label::before
+          content: ''
+          display: inline-block
+          width: 24px
+          height: 24px
+          flex-shrink: 0
+          flex-grow: 0
+          margin-right: 0.5em
+          background-color: $input-bg
+          background-repeat: no-repeat
+          background-position: center center
+          background-size: 50% 50%
+      .custom-checkbox:checked + label::before
+        background-color: $color-blue
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e")
+      p
         width: 91.3%
         font-size: 16px
         color: $text-grey-lighten

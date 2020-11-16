@@ -26,29 +26,28 @@ $(document).ready(function () {
     autoPlay: false,
     slideSpeed: 800,
     navText: ["<span class='icon-arrow-left'></span>", "<span class='icon-arrow-right'></span>"],
-    loop: false,
     rewind: true,
-    stopOnHover : true,
-    navigationText: false,
     responsive: {
-      320: {
-        items: 2,
-        nav: false
-      },
-      400: {
-        items: 2
-      },
-      650: {
-        items: 3
-      },
-      993: {
-        items: 3,
-        nav: true
-      },
-      1210: {
-        items: 4
-      }
+      320: { items: 2, nav: false },
+      400: { items: 2 },
+      650: { items: 3 },
+      993: { items: 3, nav: true },
+      1210: { items: 4 }
     }
+  })
+
+  $(window).on('scroll', function () {
+    let fixedHeaderTop = $('.opportunity').offset().top
+    let fixedHeaderBottom = $('.form-wrap').offset().top
+
+    $(function(e){
+      if ($(this).scrollTop() > fixedHeaderTop - 250) {
+        $('.fixed').fadeIn(300)
+      } if ($(this).scrollTop() > fixedHeaderBottom - 500) {
+        $('.fixed').fadeOut(300)
+        (e).preventDefault()
+      }
+    })
   })
 })
 
@@ -92,18 +91,4 @@ $(function(){
       }
     })
   }
-})
-
-$(window).on('scroll', function () {
-  let fixedHeaderTop = $('.opportunity').offset().top
-  let fixedHeaderBottom = $('.form-wrap').offset().top
-
-  $(function(e){
-    if ($(this).scrollTop() > fixedHeaderTop - 250) {
-      $('.fixed').fadeIn(300)
-    } if ($(this).scrollTop() > fixedHeaderBottom - 500) {
-      $('.fixed').fadeOut(300)
-      (e).stopPropagation()
-    }
-  })
 })
