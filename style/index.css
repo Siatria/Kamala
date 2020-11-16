@@ -180,9 +180,14 @@ body {
     opacity: 0.5; }
   .welcome-block .welcome-block-content {
     position: relative; }
+    @media only screen and (max-width: 1250px) {
+      .welcome-block .welcome-block-content {
+        width: 921px;
+        padding: 0 !important; } }
     @media only screen and (max-width: 992px) {
       .welcome-block .welcome-block-content {
-        margin-left: 40px; } }
+        width: 100%;
+        padding: 0 36px !important; } }
     @media only screen and (max-width: 768px) {
       .welcome-block .welcome-block-content {
         margin-left: 0; } }
