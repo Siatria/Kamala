@@ -26,7 +26,8 @@ $(document).ready(function () {
     autoPlay: false,
     slideSpeed: 800,
     navText: ["<span class='icon-arrow-left'></span>", "<span class='icon-arrow-right'></span>"],
-    loop: true,
+    loop: false,
+    rewind: true,
     stopOnHover : true,
     navigationText: false,
     responsive: {
