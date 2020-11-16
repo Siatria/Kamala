@@ -8,17 +8,24 @@ $(document).ready(function () {
   })
 
   //Smooth scroller on anchors
-  $('.header-register-btn').click(function(){
+  $('.header-register-btn').click(function () {
     let el = $(this).attr('href');
     $('html,body').animate({
       scrollTop: $(el).offset().top}, 1400);
     return false;
   });
 
-  $(function(){
-    if ( $(window).width() < 501 ) {
-      $('.header-register-btn').text('Register')
-    }
+  //Button rename
+  if ( $(window).width() < 501 ) {
+    $('.header-register-btn').text('Register')
+  }
+
+  //Rotate select arrow
+  $('.select-amount').on('click touchend', function () {
+    $('.background-select').toggleClass('clicked')
+  })
+  $('.select-period').on('click touchend', function () {
+    $('.background-select2').toggleClass('clicked')
   })
 
   //Slider
