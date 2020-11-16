@@ -615,7 +615,7 @@ body {
       margin-left: -194px; }
       @media only screen and (max-width: 1250px) {
         .opportunity .content-width-10 .wrap .opportunity-img {
-          width: 620px; } }
+          width: 63%; } }
       @media only screen and (max-width: 992px) {
         .opportunity .content-width-10 .wrap .opportunity-img {
           margin-left: 0;
@@ -630,14 +630,8 @@ body {
       .opportunity .content-width-10 .wrap .opportunity-img .img {
         width: 100%;
         height: 210px;
-        background: url("../images/opportunity-img.jpg");
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
+        background: url("../images/opportunity-img.jpg") 50% 50%;
         background-size: cover; }
-        @media only screen and (max-width: 1250px) {
-          .opportunity .content-width-10 .wrap .opportunity-img .img {
-            background-attachment: scroll; } }
         @media only screen and (max-width: 992px) {
           .opportunity .content-width-10 .wrap .opportunity-img .img {
             height: 152px; } }
