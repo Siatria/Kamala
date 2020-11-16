@@ -366,6 +366,11 @@ body
             width: 100%
             height: 100%
             object-fit: cover
+            opacity: .7
+            +transition(opacity,.6s,linear)
+          &:hover
+            img
+              opacity: 1
       .owl-nav
         position: absolute
         display: block
