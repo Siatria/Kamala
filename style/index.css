@@ -2,7 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,700&display=swap");
 body {
+  font-family: "Lato Regular", sans-serif; }
+
+.font-moz {
   font-family: "Lato", sans-serif; }
+  .font-moz .text-list-item {
+    font-style: normal !important; }
 
 .content-width-12 {
   width: 1180px;
@@ -714,7 +719,6 @@ body {
   .text-list .text-list-item {
     margin-bottom: 16px;
     font-style: italic;
-    font-family: "Lato Regular", sans-serif;
     padding-left: 54px;
     position: relative; }
     @media only screen and (max-width: 500px) {
@@ -1202,10 +1206,17 @@ body {
           -o-transition: transform 0.2s linear;
           transition: transform 0.2s linear; }
         @media only screen and (max-width: 500px) {
-          .form-wrap .register-form .input-wrap .background-select:before,
-          .form-wrap .register-form .input-wrap .background-select2:before {
+          .form-wrap .register-form .input-wrap .background-select,
+          .form-wrap .register-form .input-wrap .background-select2 {
+            width: 100%;
+            height: 52px;
             top: auto;
-            bottom: 10px; } }
+            bottom: 0;
+            left: 0; }
+            .form-wrap .register-form .input-wrap .background-select:before,
+            .form-wrap .register-form .input-wrap .background-select2:before {
+              top: auto;
+              bottom: 10px; } }
       .form-wrap .register-form .input-wrap .clicked:before {
         transform: rotate(180deg);
         -webkit-transform: rotate(180deg);
@@ -1241,6 +1252,7 @@ body {
           .form-wrap .register-form .input-wrap .select-period {
             width: 100%;
             height: 52px;
+            font-size: 17px;
             margin-top: 10px; } }
     .form-wrap .register-form .checkbox-wrap {
       display: flex;

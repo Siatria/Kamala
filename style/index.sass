@@ -3,7 +3,7 @@
 @import "mixin"
 
 $font-abril: 'Abril Fatface', sans-serif
-$font-lato-reg: 'Lato', sans-serif
+$font-lato-reg: 'Lato Regular', sans-serif
 $font-avenir: 'Avenir-Heavy', sans-serif
 
 $color-blue: #10AEE5
@@ -16,6 +16,11 @@ $input-bg: #F6F6F6
 
 body
   font-family: $font-lato-reg
+
+.font-moz
+  font-family: 'Lato', sans-serif
+  .text-list-item
+    font-style: normal !important
 
 .content-width-12
   width: 1180px
@@ -574,7 +579,6 @@ body
   .text-list-item
     margin-bottom: 16px
     font-style: italic
-    font-family: "Lato Regular", sans-serif
     padding-left: 54px
     position: relative
     +respond-to(mobile)
@@ -942,6 +946,11 @@ body
           opacity: .3
           +transition(transform,.2s,linear)
         +respond-to(mobile)
+          width: 100%
+          height: 52px
+          top: auto
+          bottom: 0
+          left: 0
           &:before
             top: auto
             bottom: 10px
@@ -974,6 +983,7 @@ body
         +respond-to(mobile)
           width: 100%
           height: 52px
+          font-size: 17px
           margin-top: 10px
     .checkbox-wrap
       display: flex

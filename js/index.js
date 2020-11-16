@@ -1,4 +1,9 @@
 $(document).ready(function () {
+  //Font fix in Mozilla
+  if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1){
+    $('body').addClass('font-moz')
+  }
+
   //Shows full form
   $('.form-btn').on('click touchend', function (e) {
     e.preventDefault()
@@ -21,10 +26,10 @@ $(document).ready(function () {
   }
 
   //Rotate select arrow
-  $('.select-amount').on('click touchend', function () {
+  $('.select-amount').on('click', function () {
     $('.background-select').toggleClass('clicked')
   })
-  $('.select-period').on('click touchend', function () {
+  $('.select-period').on('click', function () {
     $('.background-select2').toggleClass('clicked')
   })
 
