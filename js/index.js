@@ -1,9 +1,4 @@
 $(document).ready(function () {
-  //Font fix in Mozilla
-  if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1){
-    $('body').addClass('font-moz')
-  }
-
   //Shows full form
   $('.form-btn').on('click touchend', function (e) {
     e.preventDefault()
