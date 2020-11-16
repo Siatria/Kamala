@@ -41,7 +41,7 @@ $(document).ready(function () {
     autoPlay: false,
     slideSpeed: 800,
     navText: ["<span class='icon-arrow-left'></span>", "<span class='icon-arrow-right'></span>"],
-    rewind: true,
+    loop: true,
     responsive: {
       320: { items: 2, nav: false },
       400: { items: 2 },
