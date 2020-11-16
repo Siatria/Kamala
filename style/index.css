@@ -28,7 +28,7 @@ body {
 
 .btn {
   background: #10AEE5;
-  padding: 20px 30px 22px;
+  padding: 21px 30px 20px;
   color: #FFF;
   text-transform: uppercase;
   font-family: "Avenir-Heavy", sans-serif;
@@ -127,7 +127,7 @@ body {
     position: absolute;
     top: 14px;
     right: 20px;
-    padding: 13px 20px; }
+    padding: 13px 20px 12px; }
     @media only screen and (max-width: 1250px) {
       .fixed .header-register-btn {
         right: 20px; } }
@@ -138,7 +138,7 @@ body {
       .fixed .header-register-btn {
         top: 8px;
         font-size: 12px;
-        padding: 11px 15px; } }
+        padding: 11px 15px 10px; } }
 
 .welcome-block {
   background: url("../images/main-bg.jpg") no-repeat 50% 0;
@@ -1332,7 +1332,8 @@ body {
       bottom: -31px;
       left: 0;
       right: 0;
-      margin: 0 auto; }
+      margin: 0 auto;
+      width: 160px; }
       @media only screen and (max-width: 500px) {
         .form-wrap .register-form .form-btn {
           bottom: -24px; } }
