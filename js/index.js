@@ -57,10 +57,10 @@ $(document).ready(function () {
     let header = $('.fixed')
     let fixedHeaderTop = $('.opportunity').offset().top
     let fixedHeaderBottom = $('.form-wrap').offset().top
-    let scr = header['fade' + (
+    let scr = header['slide' + (
       (scroller > fixedHeaderTop - 250) &&
       (scroller < fixedHeaderBottom - 400) ?
-        'In': 'Out')](300)
+        'Down': 'Up')](300)
   })
 
   if ( $(window).width() > 992 ) {

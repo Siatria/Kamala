@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,700&display=swap");
 body {
-  font-family: "Lato Regular", sans-serif; }
+  font-family: "Lato", sans-serif; }
 
 .font-moz {
   font-family: "Lato", sans-serif; }
@@ -101,50 +101,49 @@ body {
   display: none;
   background: #FFF;
   height: 68px;
+  padding: 24px 0;
   -webkit-box-shadow: 0 0 40px 0 rgba(26, 26, 26, 0.12);
   -moz-box-shadow: 0 0 40px 0 rgba(26, 26, 26, 0.12);
-  box-shadow: 0 0 40px 0 rgba(26, 26, 26, 0.12); }
+  box-shadow: 0 0 40px 0 rgba(26, 26, 26, 0.12);
+  text-align: center; }
   @media only screen and (max-width: 768px) {
     .fixed {
-      height: 60px; } }
+      height: 60px;
+      padding: 20px 20px; } }
   @media only screen and (max-width: 500px) {
     .fixed {
-      height: 50px; } }
-  .fixed .content-width-10 {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%; }
-    @media only screen and (max-width: 992px) {
-      .fixed .content-width-10 {
-        justify-content: space-between; } }
-    .fixed .content-width-10 .logo {
-      width: 147px;
-      height: 19px; }
-      @media only screen and (max-width: 500px) {
-        .fixed .content-width-10 .logo {
-          width: 100px; } }
-      .fixed .content-width-10 .logo img {
-        width: 100%;
-        height: auto; }
-    .fixed .content-width-10 .header-register-btn {
-      font-size: 13px;
-      position: absolute;
-      top: 14px;
-      right: 0;
-      padding: 13px 20px; }
-      @media only screen and (max-width: 1250px) {
-        .fixed .content-width-10 .header-register-btn {
-          right: 20px; } }
-      @media only screen and (max-width: 992px) {
-        .fixed .content-width-10 .header-register-btn {
-          position: static; } }
-      @media only screen and (max-width: 500px) {
-        .fixed .content-width-10 .header-register-btn {
-          right: 10px;
-          font-size: 12px;
-          padding: 11px 15px; } }
+      height: 50px;
+      padding: 17px 20px; } }
+  .fixed .logo {
+    width: 147px;
+    height: 19px;
+    margin: 0 auto; }
+    @media only screen and (max-width: 768px) {
+      .fixed .logo {
+        margin: 0; } }
+    @media only screen and (max-width: 500px) {
+      .fixed .logo {
+        width: 100px; } }
+    .fixed .logo img {
+      width: 100%;
+      height: auto; }
+  .fixed .header-register-btn {
+    font-size: 13px;
+    position: absolute;
+    top: 14px;
+    right: 20px;
+    padding: 13px 20px; }
+    @media only screen and (max-width: 1250px) {
+      .fixed .header-register-btn {
+        right: 20px; } }
+    @media only screen and (max-width: 768px) {
+      .fixed .header-register-btn {
+        top: 10px; } }
+    @media only screen and (max-width: 500px) {
+      .fixed .header-register-btn {
+        top: 8px;
+        font-size: 12px;
+        padding: 11px 15px; } }
 
 .welcome-block {
   background: url("../images/main-bg.jpg") no-repeat 50% 0;
