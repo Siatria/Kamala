@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  //Shows full form
   $('.form-btn').on('click touchend', function (e) {
     e.preventDefault()
     $(this).text('Submit').attr('type','submit')
@@ -6,6 +7,7 @@ $(document).ready(function () {
     $('.full-form').css('height', 'auto')
   })
 
+  //Smooth scroller on anchors
   $('.header-register-btn').click(function(){
     let el = $(this).attr('href');
     $('html,body').animate({
@@ -19,7 +21,8 @@ $(document).ready(function () {
     }
   })
 
-  $(".photo-slider").owlCarousel({
+  //Slider
+  $('.photo-slider').owlCarousel({
     items: 4,
     navigation: true,
     pagination: false,
@@ -36,45 +39,43 @@ $(document).ready(function () {
     }
   })
 
+  //Fixed header
   $(window).on('scroll', function () {
+    let scroller = $(this).scrollTop()
+    let header = $('.fixed')
     let fixedHeaderTop = $('.opportunity').offset().top
     let fixedHeaderBottom = $('.form-wrap').offset().top
-
-    $(function(e){
-      if ($(this).scrollTop() > fixedHeaderTop - 250) {
-        $('.fixed').fadeIn(300)
-      } if ($(this).scrollTop() > fixedHeaderBottom - 500) {
-        $('.fixed').fadeOut(300)
-        (e).preventDefault()
-      }
-    })
+    let scr = header['fade' + (
+      (scroller > fixedHeaderTop - 250) &&
+      (scroller < fixedHeaderBottom - 400) ?
+        'In': 'Out')](300)
   })
-})
 
-$(function(){
   if ( $(window).width() > 992 ) {
     let as = 0
     $(window).on('scroll', function () {
       function number_to(id,from,to,duration) {
-        let element = document.getElementById(id);
-        let start = new Date().getTime();
+        let element = document.getElementById(id)
+        let start = new Date().getTime()
         setTimeout(function() {
-          let now = (new Date().getTime()) - start;
-          let progress = now / duration;
-          let result = Math.floor((to - from) * progress + from);
-          element.innerHTML = progress < 1 ? result : to;
-          if (progress < 1) setTimeout(arguments.callee, 10);
-        }, 10);}
+          let now = (new Date().getTime()) - start
+          let progress = now / duration
+          let result = Math.floor((to - from) * progress + from)
+          element.innerHTML = progress < 1 ? result : to
+          if (progress < 1) setTimeout(arguments.callee, 10)
+        }, 10)
+      }
 
       function moveProgressBar() {
-        let getPercent = ($('.progress-wrap').data('progress-percent') / 100);
-        let getProgressWrapWidth = $('.progress-wrap').width();
-        let progressTotal = getPercent * getProgressWrapWidth;
-        let animationLength = 2000;
+        let progressBar = $('.progress-wrap')
+        let getPercent = (progressBar.data('progress-percent') / 100)
+        let getProgressWrapWidth = progressBar.width()
+        let progressTotal = getPercent * getProgressWrapWidth
+        let animationLength = 2000
 
         $('.progress-bar').stop().animate({
           left: progressTotal
-        }, animationLength);
+        }, animationLength)
       }
 
       let progress = $('.stats-wrap').offset().top
@@ -82,10 +83,10 @@ $(function(){
       if ($(this).scrollTop() > progress - 500) {
         moveProgressBar()
         if (as === 0) {
-          number_to("investors",0,45,2000);
-          number_to("days",0,30,2000);
-          number_to("yield",0,9,2000);
-          number_to("funded",0,125000,2000);
+          number_to('investors',0,45,2000);
+          number_to('days',0,30,2000);
+          number_to('yield',0,9,2000);
+          number_to('funded',0,125000,2000);
           as++
         }
       }
