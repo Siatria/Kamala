@@ -199,7 +199,11 @@ body
     +box-shadow(0 42px 94px 0,rgba(26,26,26,.08))
     text-align: left
     margin-bottom: -31px
+    +respond-to(desktop)
+      width: 921px
+      margin: 0 auto -31px
     +respond-to(tablet)
+      width: 100%
       padding: 18px 40px 80px
     +respond-to(small-tablet)
       padding-bottom: 60px
@@ -338,14 +342,62 @@ body
       font-weight: 700
 .slider
   padding-top: 85px
+  overflow: hidden
   +respond-to(tablet)
     padding-top: 70px
   +respond-to(mobile)
     padding-top: 57px
-  img
-    display: inline-block
-    width: 280px
-    height: 190px
+  .content-width-12
+    .photo-slider
+      .owl-stage-outer
+        width: 140%
+        .item
+          width: 280px
+          height: 190px
+          +respond-to(desktop)
+            width: 95%
+          +respond-to(tablet)
+            width: 97%
+          +respond-to(mobile)
+            height: 180px
+          img
+            width: 100%
+            height: 100%
+            object-fit: cover
+      .owl-nav
+        position: absolute
+        display: block
+        top: 32%
+        left: 0
+        right: 0
+        +respond-to(tablet)
+          display: none
+        .owl-prev,
+        .owl-next
+          width: 64px
+          height: 64px
+          +border-radius(50%)
+          background: $color-white
+          +box-shadow(0 2px 6px 0,rgba(26,26,26,.14))
+          position: absolute
+          +transition(box-shadow,.4s,linear)
+          &:hover
+            +box-shadow(0 2px 6px 0,rgba(26,26,26,.3))
+            span
+              color: $color-black
+          span
+            color: rgba(26,26,28,.4)
+            font-size: 25px
+            +transition(color,.4s,linear)
+        .owl-next
+          right: -75px
+          +respond-to(desktop-xl)
+            right: -25px
+        .owl-prev
+          left: -75px
+          +respond-to(desktop-xl)
+            left: -25px
+
 .opportunity
   padding: 131px 0 100px
   +respond-to(desktop)

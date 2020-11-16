@@ -81,6 +81,7 @@ $ex-small: 500px
 $small: 768px
 $medium: 992px
 $large: 1250px
+$xl-large: 1360px
 
 @mixin respond-to($media)
   @if $media == mobile
@@ -94,4 +95,7 @@ $large: 1250px
       @content
   @else if $media == desktop
     @media only screen and (max-width: $large)
+      @content
+  @else if $media == desktop-xl
+    @media only screen and (max-width: $xl-large)
       @content

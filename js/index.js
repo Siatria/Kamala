@@ -12,6 +12,43 @@ $(document).ready(function () {
       scrollTop: $(el).offset().top}, 1400);
     return false;
   });
+
+  $(function(){
+    if ( $(window).width() < 501 ) {
+      $('.header-register-btn').text('Register')
+    }
+  })
+
+  $(".photo-slider").owlCarousel({
+    items: 4,
+    navigation: true,
+    pagination: false,
+    autoPlay: false,
+    slideSpeed: 800,
+    navText: ["<span class='icon-arrow-left'></span>", "<span class='icon-arrow-right'></span>"],
+    loop: true,
+    stopOnHover : true,
+    navigationText: false,
+    responsive: {
+      320: {
+        items: 1,
+        nav: false
+      },
+      400: {
+        items: 2
+      },
+      650: {
+        items: 3
+      },
+      993: {
+        items: 3,
+        nav: true
+      },
+      1210: {
+        items: 4
+      }
+    }
+  })
 })
 
 $(function(){
