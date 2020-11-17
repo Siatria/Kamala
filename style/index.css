@@ -1432,9 +1432,21 @@ body {
   color: rgba(26, 26, 28, 0.3);
   padding-bottom: 77px; }
 
+@media only screen and (max-width: 1250px) {
+  .privacy-wrapper .top-bar {
+    padding: 0 36px; } }
+@media only screen and (max-width: 500px) {
+  .privacy-wrapper .top-bar {
+    padding: 0 20px; } }
 .privacy-wrapper .top-bar .content-width-10 {
   border-bottom: 2px solid rgba(26, 26, 28, 0.15);
   padding: 35px 0 29px; }
+  @media only screen and (max-width: 992px) {
+    .privacy-wrapper .top-bar .content-width-10 {
+      padding: 22px 0 15px; } }
+  @media only screen and (max-width: 500px) {
+    .privacy-wrapper .top-bar .content-width-10 {
+      padding: 11px 0 10px; } }
 .privacy-wrapper .top-bar .back-link {
   font-size: 18px;
   color: rgba(26, 26, 28, 0.7);
@@ -1445,6 +1457,14 @@ body {
   -o-transition: color 0.3s linear;
   transition: color 0.3s linear;
   letter-spacing: 0.03em; }
+  @media only screen and (max-width: 992px) {
+    .privacy-wrapper .top-bar .back-link {
+      font-size: 16px; } }
+  @media only screen and (max-width: 500px) {
+    .privacy-wrapper .top-bar .back-link {
+      font-size: 12px; }
+      .privacy-wrapper .top-bar .back-link:before {
+        margin: 1px 6px 0 -2px; } }
   .privacy-wrapper .top-bar .back-link:before {
     content: "";
     font-family: fontello;
@@ -1462,21 +1482,58 @@ body {
     .privacy-wrapper .top-bar .back-link:hover:before {
       color: #10AEE5; }
 .privacy-wrapper .content-wrap {
-  margin-top: 37px; }
+  margin-top: 37px;
+  padding-bottom: 110px; }
+  @media only screen and (max-width: 1250px) {
+    .privacy-wrapper .content-wrap {
+      padding: 0 36px; } }
+  @media only screen and (max-width: 992px) {
+    .privacy-wrapper .content-wrap {
+      margin-top: 23px;
+      padding-bottom: 60px; } }
+  @media only screen and (max-width: 500px) {
+    .privacy-wrapper .content-wrap {
+      padding: 0 20px 45px;
+      margin-top: 19px; } }
+  @media only screen and (max-width: 1250px) {
+    .privacy-wrapper .content-wrap .content-width-10 {
+      padding: 0; } }
   .privacy-wrapper .content-wrap .content-width-10 .header-content .privacy-title {
     font-size: 64px;
     color: #1A1A1C;
     font-family: "Abril Fatface", sans-serif;
     font-weight: normal; }
+    @media only screen and (max-width: 992px) {
+      .privacy-wrapper .content-wrap .content-width-10 .header-content .privacy-title {
+        font-size: 52px; } }
+    @media only screen and (max-width: 500px) {
+      .privacy-wrapper .content-wrap .content-width-10 .header-content .privacy-title {
+        font-size: 40px; } }
   .privacy-wrapper .content-wrap .content-width-10 .header-content .privacy-sub-title {
     margin-top: 13px;
     font-size: 24px;
     font-family: "Avenir-Heavy", sans-serif; }
+    @media only screen and (max-width: 992px) {
+      .privacy-wrapper .content-wrap .content-width-10 .header-content .privacy-sub-title {
+        font-size: 22px;
+        margin-top: 7px; } }
+    @media only screen and (max-width: 500px) {
+      .privacy-wrapper .content-wrap .content-width-10 .header-content .privacy-sub-title {
+        font-size: 18px;
+        margin-top: 6px; } }
   .privacy-wrapper .content-wrap .content-width-10 .text-content {
     margin-top: 45px; }
+    @media only screen and (max-width: 992px) {
+      .privacy-wrapper .content-wrap .content-width-10 .text-content {
+        margin-top: 29px; } }
+    @media only screen and (max-width: 500px) {
+      .privacy-wrapper .content-wrap .content-width-10 .text-content {
+        margin-top: 21px; } }
     .privacy-wrapper .content-wrap .content-width-10 .text-content .link {
       color: #10AEE5;
       font-weight: 700; }
+      .privacy-wrapper .content-wrap .content-width-10 .text-content .link:hover {
+        color: #25C6FF; }
     .privacy-wrapper .content-wrap .content-width-10 .text-content .text-info {
       margin-bottom: 24px; }
       .privacy-wrapper .content-wrap .content-width-10 .text-content .text-info:last-child {
@@ -1484,6 +1541,13 @@ body {
     .privacy-wrapper .content-wrap .content-width-10 .text-content .policy-list {
       padding: 13px 0;
       width: 80%; }
+      @media only screen and (max-width: 992px) {
+        .privacy-wrapper .content-wrap .content-width-10 .text-content .policy-list {
+          padding: 6px 0; } }
+      @media only screen and (max-width: 500px) {
+        .privacy-wrapper .content-wrap .content-width-10 .text-content .policy-list {
+          padding: 3px 0;
+          width: 100%; } }
       .privacy-wrapper .content-wrap .content-width-10 .text-content .policy-list li {
         color: #1A1A1C;
         display: flex;

@@ -1126,9 +1126,17 @@ body
 // Privacy Page
 .privacy-wrapper
   .top-bar
+    +respond-to(desktop)
+      padding: 0 36px
+    +respond-to(mobile)
+      padding: 0 20px
     .content-width-10
       border-bottom: 2px solid rgba(26,26,28,.15)
       padding: 35px 0 29px
+      +respond-to(tablet)
+        padding: 22px 0 15px
+      +respond-to(mobile)
+        padding: 11px 0 10px
     .back-link
       font-size: 18px
       color: $text-grey-lighten
@@ -1136,6 +1144,12 @@ body
       text-transform: uppercase
       +transition(color,.3s,linear)
       letter-spacing: 0.03em
+      +respond-to(tablet)
+        font-size: 16px
+      +respond-to(mobile)
+        font-size: 12px
+        &:before
+          margin: 1px 6px 0 -2px
       &:before
         content: '\e802'
         font-family: fontello
@@ -1151,22 +1165,49 @@ body
           color: $color-blue
   .content-wrap
     margin-top: 37px
+    padding-bottom: 110px
+    +respond-to(desktop)
+      padding: 0 36px
+    +respond-to(tablet)
+      margin-top: 23px
+      padding-bottom: 60px
+    +respond-to(mobile)
+      padding: 0 20px 45px
+      margin-top: 19px
     .content-width-10
+      +respond-to(desktop)
+        padding: 0
       .header-content
         .privacy-title
           font-size: 64px
           color: $text-title-grey
           font-family: $font-abril
           font-weight: normal
+          +respond-to(tablet)
+            font-size: 52px
+          +respond-to(mobile)
+            font-size: 40px
         .privacy-sub-title
           margin-top: 13px
           font-size: 24px
           font-family: $font-avenir
+          +respond-to(tablet)
+            font-size: 22px
+            margin-top: 7px
+          +respond-to(mobile)
+            font-size: 18px
+            margin-top: 6px
       .text-content
         margin-top: 45px
+        +respond-to(tablet)
+          margin-top: 29px
+        +respond-to(mobile)
+          margin-top: 21px
         .link
           color: $color-blue
           font-weight: 700
+          &:hover
+            color: $blue-hover
         .text-info
           margin-bottom: 24px
           &:last-child
@@ -1174,6 +1215,11 @@ body
         .policy-list
           padding: 13px 0
           width: 80%
+          +respond-to(tablet)
+            padding: 6px 0
+          +respond-to(mobile)
+            padding: 3px 0
+            width: 100%
           li
             color: $text-title-grey
             display: flex
