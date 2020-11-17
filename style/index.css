@@ -330,6 +330,12 @@ body {
       @media only screen and (max-width: 500px) {
         .stats-wrap .stats .count-data {
           text-align: center; } }
+      @media only screen and (max-width: 768px) {
+        .stats-wrap .stats .count-data .investors,
+        .stats-wrap .stats .count-data .days,
+        .stats-wrap .stats .count-data .yield,
+        .stats-wrap .stats .count-data .funded {
+          text-align: center; } }
       .stats-wrap .stats .count-data .investors span,
       .stats-wrap .stats .count-data .days span,
       .stats-wrap .stats .count-data .yield span,
