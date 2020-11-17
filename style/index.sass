@@ -915,7 +915,7 @@ body
       font-size: 20px
       color: $text-title-grey
       background: $input-bg
-      padding: 17px 60px 18px 20px
+      padding: 19px 60px 16px 20px
       letter-spacing: 0.02em
       +placeholder-form
       margin-bottom: 16px
@@ -923,7 +923,8 @@ body
       position: relative
       +transition(border-color,.3s,linear)
       +respond-to(mobile)
-        padding: 11px 16px 14px
+        padding: 13px 50px 12px 16px
+        +border-radius(0)
       &:hover
         border-color: rgba(26,26,28,0.1)
       &:focus
@@ -984,7 +985,7 @@ body
         border: none
         color: $text-title-grey
         font-size: 20px
-        padding: 10px 15px
+        padding: 14px 15px 10px
         position: relative
         z-index: 1
         -webkit-appearance: none

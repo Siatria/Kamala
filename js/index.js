@@ -38,6 +38,8 @@ $(document).ready(function () {
   $(document.body).on('click', function(e){
     if(!$(e.target).closest('.select-amount').length){
       $('.background-select').removeClass('clicked')
+    } if(!$(e.target).closest('.select-period').length){
+      $('.background-select2').removeClass('clicked')
     }
   })
 
