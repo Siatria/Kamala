@@ -921,10 +921,10 @@ body
       margin-bottom: 16px
       border-bottom: 4px solid transparent
       position: relative
+      +border-radius(0)
       +transition(border-color,.3s,linear)
       +respond-to(mobile)
         padding: 13px 50px 12px 16px
-        +border-radius(0)
       &:hover
         border-color: rgba(26,26,28,0.1)
       &:focus
@@ -992,6 +992,7 @@ body
         -moz-appearance: none
         appearance: none
         border-bottom: 4px solid transparent
+        +border-radius(0)
         +transition(border-color,.3s,linear)
         &:hover
           border-color: rgba(26,26,28,0.1)
