@@ -831,6 +831,54 @@ body
     padding-bottom: 80px
   +respond-to(mobile)
     padding-bottom: 75px
+  .success-message
+    margin: -57px auto 0
+    width: 816px
+    background: $color-white
+    padding: 70px 180px 75px
+    text-align: center
+    display: none
+    +box-shadow(0 42px 94px 0,rgba(26,26,26,.08))
+    +respond-to(tablet)
+      width: 582px
+      margin-top: -39px
+      padding: 50px 71px
+    +respond-to(small-tablet)
+      width: 461px
+      padding: 45px 40px
+    +respond-to(mobile)
+      width: 280px
+      padding: 40px 20px 30px
+    .message-title
+      font-size: 30px
+      line-height: 41px
+      font-family: $font-avenir
+      color: $text-title-grey
+      +respond-to(tablet)
+        line-height: 35px
+      +respond-to(small-tablet)
+        font-size: 26px
+        line-height: 30px
+      +respond-to(mobile)
+        font-size: 20px
+        line-height: 24px
+        &:before
+          margin: 0 auto 15px
+          font-size: 40px
+      &:before
+        content: '\e807'
+        font-family: fontello
+        font-size: 56px
+        color: $color-blue
+        display: block
+        margin: 0 auto 21px
+    .message-text
+      font-size: 18px
+      line-height: 24px
+      color: $text-grey-lighten
+      margin-top: 16px
+      +respond-to(small-tablet)
+        font-size: 16px
   .form-img
     background: url("../images/register-img.jpg") no-repeat 50% 50%
     background-size: cover
@@ -1049,7 +1097,8 @@ body
             text-decoration: underline
     .checkbox-wrap+.checkbox-wrap
       margin: 0
-    .form-btn
+    .form-btn,
+    .continue-btn
       border: none
       cursor: pointer
       position: absolute
@@ -1060,6 +1109,8 @@ body
       width: 160px
       +respond-to(mobile)
         bottom: -24px
+    .form-btn
+      display: none
 .social
   width: 503px
   margin: 0 auto

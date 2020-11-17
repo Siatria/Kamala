@@ -5,11 +5,18 @@ $(document).ready(function () {
   }
   
   //Shows full form
-  $('.form-btn').on('click touchend', function (e) {
+  $('.continue-btn').on('click touchend', function (e) {
     e.preventDefault()
-    $(this).text('Submit').attr('type','submit')
+    $(this).fadeOut(300)
+    $('.form-btn').fadeIn(300)
     $('.hidden-wrap').slideDown(300)
     $('.full-form').css('height', 'auto')
+  })
+
+  $('.register-form').submit(function (e) {
+    e.preventDefault()
+    $(this).fadeOut(500)
+    $('.success-message').fadeIn(500)
   })
 
   //Smooth scroller on anchors

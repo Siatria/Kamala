@@ -1033,6 +1033,63 @@ body {
   @media only screen and (max-width: 500px) {
     .form-wrap {
       padding-bottom: 75px; } }
+  .form-wrap .success-message {
+    margin: -57px auto 0;
+    width: 816px;
+    background: #FFF;
+    padding: 70px 180px 75px;
+    text-align: center;
+    display: none;
+    -webkit-box-shadow: 0 42px 94px 0 rgba(26, 26, 26, 0.08);
+    -moz-box-shadow: 0 42px 94px 0 rgba(26, 26, 26, 0.08);
+    box-shadow: 0 42px 94px 0 rgba(26, 26, 26, 0.08); }
+    @media only screen and (max-width: 992px) {
+      .form-wrap .success-message {
+        width: 582px;
+        margin-top: -39px;
+        padding: 50px 71px; } }
+    @media only screen and (max-width: 768px) {
+      .form-wrap .success-message {
+        width: 461px;
+        padding: 45px 40px; } }
+    @media only screen and (max-width: 500px) {
+      .form-wrap .success-message {
+        width: 280px;
+        padding: 40px 20px 30px; } }
+    .form-wrap .success-message .message-title {
+      font-size: 30px;
+      line-height: 41px;
+      font-family: "Avenir-Heavy", sans-serif;
+      color: #1A1A1C; }
+      @media only screen and (max-width: 992px) {
+        .form-wrap .success-message .message-title {
+          line-height: 35px; } }
+      @media only screen and (max-width: 768px) {
+        .form-wrap .success-message .message-title {
+          font-size: 26px;
+          line-height: 30px; } }
+      @media only screen and (max-width: 500px) {
+        .form-wrap .success-message .message-title {
+          font-size: 20px;
+          line-height: 24px; }
+          .form-wrap .success-message .message-title:before {
+            margin: 0 auto 15px;
+            font-size: 40px; } }
+      .form-wrap .success-message .message-title:before {
+        content: "";
+        font-family: fontello;
+        font-size: 56px;
+        color: #10AEE5;
+        display: block;
+        margin: 0 auto 21px; }
+    .form-wrap .success-message .message-text {
+      font-size: 18px;
+      line-height: 24px;
+      color: rgba(26, 26, 28, 0.7);
+      margin-top: 16px; }
+      @media only screen and (max-width: 768px) {
+        .form-wrap .success-message .message-text {
+          font-size: 16px; } }
   .form-wrap .form-img {
     background: url("../images/register-img.jpg") no-repeat 50% 50%;
     background-size: cover;
@@ -1345,7 +1402,8 @@ body {
             text-decoration: underline; }
     .form-wrap .register-form .checkbox-wrap + .checkbox-wrap {
       margin: 0; }
-    .form-wrap .register-form .form-btn {
+    .form-wrap .register-form .form-btn,
+    .form-wrap .register-form .continue-btn {
       border: none;
       cursor: pointer;
       position: absolute;
@@ -1355,8 +1413,11 @@ body {
       margin: 0 auto;
       width: 160px; }
       @media only screen and (max-width: 500px) {
-        .form-wrap .register-form .form-btn {
+        .form-wrap .register-form .form-btn,
+        .form-wrap .register-form .continue-btn {
           bottom: -24px; } }
+    .form-wrap .register-form .form-btn {
+      display: none; }
 
 .social {
   width: 503px;
