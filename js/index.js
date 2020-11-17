@@ -26,11 +26,19 @@ $(document).ready(function () {
   }
 
   //Rotate select arrow
-  $('.select-amount').on('click', function () {
+  $('.select-amount').on('click', function (e) {
+    e.preventDefault()
     $('.background-select').toggleClass('clicked')
   })
-  $('.select-period').on('click', function () {
+  $('.select-period').on('click', function (e) {
+    e.preventDefault()
     $('.background-select2').toggleClass('clicked')
+  })
+
+  $(document.body).on('click', function(e){
+    if(!$(e.target).closest('.select-amount').length){
+      $('.background-select').removeClass('clicked')
+    }
   })
 
   //Slider

@@ -501,10 +501,10 @@ body {
         -moz-box-shadow: 0 2px 6px 0 rgba(26, 26, 26, 0.14);
         box-shadow: 0 2px 6px 0 rgba(26, 26, 26, 0.14);
         position: absolute;
-        -webkit-transition: box-shadow 0.4s linear;
-        -moz-transition: box-shadow 0.4s linear;
-        -o-transition: box-shadow 0.4s linear;
-        transition: box-shadow 0.4s linear; }
+        -webkit-transition: box-shadow 0.3s linear;
+        -moz-transition: box-shadow 0.3s linear;
+        -o-transition: box-shadow 0.3s linear;
+        transition: box-shadow 0.3s linear; }
         .slider .content-width-12 .photo-slider .owl-nav .owl-prev:hover,
         .slider .content-width-12 .photo-slider .owl-nav .owl-next:hover {
           -webkit-box-shadow: 0 2px 6px 0 rgba(26, 26, 26, 0.3);
@@ -517,10 +517,10 @@ body {
         .slider .content-width-12 .photo-slider .owl-nav .owl-next span {
           color: rgba(26, 26, 28, 0.4);
           font-size: 25px;
-          -webkit-transition: color 0.4s linear;
-          -moz-transition: color 0.4s linear;
-          -o-transition: color 0.4s linear;
-          transition: color 0.4s linear; }
+          -webkit-transition: color 0.3s linear;
+          -moz-transition: color 0.3s linear;
+          -o-transition: color 0.3s linear;
+          transition: color 0.3s linear; }
       .slider .content-width-12 .photo-slider .owl-nav .owl-next {
         right: -75px; }
         @media only screen and (max-width: 1360px) {
@@ -1137,10 +1137,10 @@ body {
       margin-bottom: 16px;
       border-bottom: 4px solid transparent;
       position: relative;
-      -webkit-transition: border-color 0.4s linear;
-      -moz-transition: border-color 0.4s linear;
-      -o-transition: border-color 0.4s linear;
-      transition: border-color 0.4s linear; }
+      -webkit-transition: border-color 0.3s linear;
+      -moz-transition: border-color 0.3s linear;
+      -o-transition: border-color 0.3s linear;
+      transition: border-color 0.3s linear; }
       .form-wrap .register-form input[type=email]::-webkit-input-placeholder,
       .form-wrap .register-form input[type=text]::-webkit-input-placeholder,
       .form-wrap .register-form input[type=tel]::-webkit-input-placeholder {
@@ -1269,10 +1269,10 @@ body {
         -moz-appearance: none;
         appearance: none;
         border-bottom: 4px solid transparent;
-        -webkit-transition: border-color 0.4s linear;
-        -moz-transition: border-color 0.4s linear;
-        -o-transition: border-color 0.4s linear;
-        transition: border-color 0.4s linear; }
+        -webkit-transition: border-color 0.3s linear;
+        -moz-transition: border-color 0.3s linear;
+        -o-transition: border-color 0.3s linear;
+        transition: border-color 0.3s linear; }
         .form-wrap .register-form .input-wrap .select-amount:hover,
         .form-wrap .register-form .input-wrap .select-period:hover {
           border-color: rgba(26, 26, 28, 0.1); }
@@ -1404,10 +1404,10 @@ body {
         text-transform: uppercase;
         font-family: "Avenir-Heavy", sans-serif;
         letter-spacing: 0.03em;
-        -webkit-transition: color 0.4s linear;
-        -moz-transition: color 0.4s linear;
-        -o-transition: color 0.4s linear;
-        transition: color 0.4s linear; }
+        -webkit-transition: color 0.3s linear;
+        -moz-transition: color 0.3s linear;
+        -o-transition: color 0.3s linear;
+        transition: color 0.3s linear; }
         @media only screen and (max-width: 500px) {
           .social .social-list .social-item a {
             font-size: 16px; } }
