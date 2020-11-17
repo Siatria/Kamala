@@ -1432,4 +1432,69 @@ body {
   color: rgba(26, 26, 28, 0.3);
   padding-bottom: 77px; }
 
+.privacy-wrapper .top-bar .content-width-10 {
+  border-bottom: 2px solid rgba(26, 26, 28, 0.15);
+  padding: 35px 0 29px; }
+.privacy-wrapper .top-bar .back-link {
+  font-size: 18px;
+  color: rgba(26, 26, 28, 0.7);
+  font-family: "Avenir-Heavy", sans-serif;
+  text-transform: uppercase;
+  -webkit-transition: color 0.3s linear;
+  -moz-transition: color 0.3s linear;
+  -o-transition: color 0.3s linear;
+  transition: color 0.3s linear;
+  letter-spacing: 0.03em; }
+  .privacy-wrapper .top-bar .back-link:before {
+    content: "";
+    font-family: fontello;
+    color: rgba(26, 26, 28, 0.7);
+    -webkit-transition: color 0.3s linear;
+    -moz-transition: color 0.3s linear;
+    -o-transition: color 0.3s linear;
+    transition: color 0.3s linear;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 24px;
+    margin: -3px 9px 0 0; }
+  .privacy-wrapper .top-bar .back-link:hover {
+    color: #10AEE5; }
+    .privacy-wrapper .top-bar .back-link:hover:before {
+      color: #10AEE5; }
+.privacy-wrapper .content-wrap {
+  margin-top: 37px; }
+  .privacy-wrapper .content-wrap .content-width-10 .header-content .privacy-title {
+    font-size: 64px;
+    color: #1A1A1C;
+    font-family: "Abril Fatface", sans-serif;
+    font-weight: normal; }
+  .privacy-wrapper .content-wrap .content-width-10 .header-content .privacy-sub-title {
+    margin-top: 13px;
+    font-size: 24px;
+    font-family: "Avenir-Heavy", sans-serif; }
+  .privacy-wrapper .content-wrap .content-width-10 .text-content {
+    margin-top: 45px; }
+    .privacy-wrapper .content-wrap .content-width-10 .text-content .link {
+      color: #10AEE5;
+      font-weight: 700; }
+    .privacy-wrapper .content-wrap .content-width-10 .text-content .text-info {
+      margin-bottom: 24px; }
+      .privacy-wrapper .content-wrap .content-width-10 .text-content .text-info:last-child {
+        margin-bottom: 0; }
+    .privacy-wrapper .content-wrap .content-width-10 .text-content .policy-list {
+      padding: 13px 0;
+      width: 80%; }
+      .privacy-wrapper .content-wrap .content-width-10 .text-content .policy-list li {
+        color: #1A1A1C;
+        display: flex;
+        margin-bottom: 16px; }
+        .privacy-wrapper .content-wrap .content-width-10 .text-content .policy-list li:last-child {
+          margin-bottom: 0; }
+        .privacy-wrapper .content-wrap .content-width-10 .text-content .policy-list li .blue-number {
+          color: #10AEE5;
+          font-weight: 700;
+          display: inline-block;
+          vertical-align: top;
+          margin: 0 20px 0 0; }
+
 /*# sourceMappingURL=index.css.map */

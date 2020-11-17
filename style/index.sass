@@ -1122,3 +1122,67 @@ body
   font-size: 11px
   color: rgba(26,26,28,0.3)
   padding-bottom: 77px
+
+// Privacy Page
+.privacy-wrapper
+  .top-bar
+    .content-width-10
+      border-bottom: 2px solid rgba(26,26,28,.15)
+      padding: 35px 0 29px
+    .back-link
+      font-size: 18px
+      color: $text-grey-lighten
+      font-family: $font-avenir
+      text-transform: uppercase
+      +transition(color,.3s,linear)
+      letter-spacing: 0.03em
+      &:before
+        content: '\e802'
+        font-family: fontello
+        color: $text-grey-lighten
+        +transition(color,.3s,linear)
+        display: inline-block
+        vertical-align: top
+        font-size: 24px
+        margin: -3px 9px 0 0
+      &:hover
+        color: $color-blue
+        &:before
+          color: $color-blue
+  .content-wrap
+    margin-top: 37px
+    .content-width-10
+      .header-content
+        .privacy-title
+          font-size: 64px
+          color: $text-title-grey
+          font-family: $font-abril
+          font-weight: normal
+        .privacy-sub-title
+          margin-top: 13px
+          font-size: 24px
+          font-family: $font-avenir
+      .text-content
+        margin-top: 45px
+        .link
+          color: $color-blue
+          font-weight: 700
+        .text-info
+          margin-bottom: 24px
+          &:last-child
+            margin-bottom: 0
+        .policy-list
+          padding: 13px 0
+          width: 80%
+          li
+            color: $text-title-grey
+            display: flex
+            margin-bottom: 16px
+            &:last-child
+              margin-bottom: 0
+            .blue-number
+              color: $color-blue
+              font-weight: 700
+              display: inline-block
+              vertical-align: top
+              margin: 0 20px 0 0
