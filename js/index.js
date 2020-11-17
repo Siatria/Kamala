@@ -8,7 +8,7 @@ $(document).ready(function () {
   })
 
   //Smooth scroller on anchors
-  $('.header-register-btn').click(function () {
+  $('.header-register-btn, .register-btn').click(function () {
     let el = $(this).attr('href');
     $('html,body').animate({
       scrollTop: $(el).offset().top}, 1400);
