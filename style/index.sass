@@ -358,6 +358,10 @@ body
   .content-width-12
     .photo-slider
       height: 190px
+      +respond-to(small-tablet)
+        height: 150px
+      +respond-to(mobile)
+        height: 95px
       &:hover
         .owl-nav
           top: 32% !important

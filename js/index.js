@@ -15,8 +15,10 @@ $(document).ready(function () {
 
   $('.register-form').submit(function (e) {
     e.preventDefault()
-    $(this).fadeOut(500)
-    $('.success-message').fadeIn(500)
+    $(this).slideUp(300)
+    setTimeout(function () {
+      $('.success-message').fadeIn(300)
+    }, 300)
   })
 
   //Smooth scroller on anchors
@@ -84,12 +86,7 @@ $(document).ready(function () {
     //Fixed header
     let scroller = $(this).scrollTop()
     let header = $('.fixed')
-    let fixedHeaderTop = $('.opportunity').offset().top
-    let fixedHeaderBottom = $('.form-wrap').offset().top
-    let scr = header['slide' + (
-      (scroller > fixedHeaderTop - 250) &&
-      (scroller < fixedHeaderBottom - 400) ?
-        'Down': 'Up')](300)
+    let scr = header['slide' + ((scroller > 80) ? 'Down': 'Up')](300)
 
     //Parallax
     let scrolled = $(window).scrollTop()
