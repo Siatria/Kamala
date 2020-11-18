@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap')
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300;1,400&display=swap')
 @import "mixin"
 
 $font-abril: 'Abril Fatface', sans-serif
@@ -16,10 +16,6 @@ $input-bg: #F6F6F6
 
 body
   font-family: $font-lato-reg
-
-.font-moz
-  .text-list-item
-    font-style: normal !important
 
 .content-width-12
   width: 1180px
@@ -96,26 +92,29 @@ body
   left: 0
   right: 0
   z-index: 2
-  display: none
   background: $color-white
   height: 68px
-  padding: 24px 0
+  padding: 22px 0
   +box-shadow(0 0 40px 0,rgba(26,26,26,.12))
   text-align: center
+  +respond-to(tablet)
+    padding: 25px 0
   +respond-to(small-tablet)
     height: 60px
-    padding: 20px 20px
+    padding: 22px 20px
   +respond-to(mobile)
-    height: 50px
-    padding: 17px 20px
+    height: 53px
+    padding: 19px 20px
   .logo
-    width: 147px
-    height: 19px
+    width: 240px
     margin: 0 auto
+    display: inline-block
+    +respond-to(tablet)
+      width: 187px
     +respond-to(small-tablet)
       margin: 0
     +respond-to(mobile)
-      width: 100px
+      width: 145px
     img
       width: 100%
       height: auto
@@ -125,6 +124,7 @@ body
     top: 14px
     right: 20px
     padding: 13px 20px 12px
+    display: none
     +respond-to(desktop)
       right: 20px
     +respond-to(small-tablet)
@@ -136,17 +136,20 @@ body
 
 .welcome-block
   background: fixed url("../images/main-bg.jpg") no-repeat 50% 0 / cover
-  height: 100vh
+  height: 637px
   position: relative
   display: flex
   align-items: flex-end
   padding-bottom: 100px
   +respond-to(tablet)
     padding-bottom: 112px
+    height: 697px
   +respond-to(small-tablet)
     padding-bottom: 90px
+    height: 550px
   +respond-to(mobile)
     padding-bottom: 55px
+    height: 405px
   &:before
     content: ''
     @include blue-gradient
@@ -166,21 +169,26 @@ body
       padding: 0 36px!important
     +respond-to(small-tablet)
       margin-left: 0
+      padding: 0 20px!important
     .welcome-title
       font-family: $font-abril
-      font-size: 106px
+      font-size: 82px
       letter-spacing: -0.02em
-      line-height: 115px
+      line-height: 90px
       color: $color-white
       font-weight: 400
+      +respond-to(desktop)
+        font-size: 77px
       +respond-to(tablet)
-        font-size: 86px
+        font-size: 59px
       +respond-to(small-tablet)
-        font-size: 66px
-        line-height: 70px
+        font-size: 55px
+        line-height: 55px
+        span
+          display: block
       +respond-to(mobile)
-        font-size: 46px
-        line-height: 50px
+        font-size: 44px
+        line-height: 45px
     p
       font-size: 38px
       color: $color-white
@@ -214,8 +222,8 @@ body
     +respond-to(small-tablet)
       padding-bottom: 60px
     +respond-to(mobile)
-      padding: 14px 24px 60px
-      margin-bottom: -37px
+      padding: 14px 24px 50px
+      margin-bottom: -27px
     .top-line
       display: flex
       justify-content: space-between
@@ -266,8 +274,6 @@ body
         left: 0
         position: absolute
         top: 0
-        +respond-to(tablet)
-          left: 96%
     .count-data
       display: flex
       justify-content: space-between
@@ -311,7 +317,7 @@ body
         +respond-to(small-tablet)
           margin-right: 61px
         +respond-to(mobile)
-          margin-right: 30px
+          margin-right: 35px
       .funded
         margin-left: auto
         text-align: right
@@ -839,7 +845,7 @@ body
     margin: -57px auto 0
     width: 816px
     background: $color-white
-    padding: 70px 180px 75px
+    padding: 54px 180px 75px
     text-align: center
     display: none
     +box-shadow(0 42px 94px 0,rgba(26,26,26,.08))
@@ -999,15 +1005,13 @@ body
         top: 0
         right: 0
         &:before
-          content: '\e801'
+          content: '\e808'
           font-family: fontello
-          color: $text-grey-lighten
+          color: $text-title-grey
           position: absolute
           top: 20px
           right: 15px
-          font-size: 25px
-          opacity: .3
-          +transition(transform,.2s,linear)
+          font-size: 20px
         +respond-to(mobile)
           width: 100%
           height: 52px
@@ -1015,8 +1019,8 @@ body
           bottom: 0
           left: 0
           &:before
-            top: auto
-            bottom: 10px
+            top: 17px
+            font-size: 17px
       .clicked
         &:before
           +transform-rotate(180deg)
@@ -1044,6 +1048,7 @@ body
         -moz-appearance: none
         appearance: none
         border-bottom: 4px solid transparent
+        cursor: pointer
         +border-radius(0)
         +transition(border-color,.3s,linear)
         &:hover
@@ -1111,6 +1116,7 @@ body
       right: 0
       margin: 0 auto
       width: 160px
+      +border-radius(0)
       +respond-to(mobile)
         bottom: -24px
     .form-btn

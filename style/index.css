@@ -1,11 +1,8 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300;1,400&display=swap");
 body {
   font-family: "Lato", sans-serif; }
-
-.font-moz .text-list-item {
-  font-style: normal !important; }
 
 .content-width-12 {
   width: 1180px;
@@ -96,32 +93,37 @@ body {
   left: 0;
   right: 0;
   z-index: 2;
-  display: none;
   background: #FFF;
   height: 68px;
-  padding: 24px 0;
+  padding: 22px 0;
   -webkit-box-shadow: 0 0 40px 0 rgba(26, 26, 26, 0.12);
   -moz-box-shadow: 0 0 40px 0 rgba(26, 26, 26, 0.12);
   box-shadow: 0 0 40px 0 rgba(26, 26, 26, 0.12);
   text-align: center; }
+  @media only screen and (max-width: 992px) {
+    .fixed {
+      padding: 25px 0; } }
   @media only screen and (max-width: 768px) {
     .fixed {
       height: 60px;
-      padding: 20px 20px; } }
+      padding: 22px 20px; } }
   @media only screen and (max-width: 500px) {
     .fixed {
-      height: 50px;
-      padding: 17px 20px; } }
+      height: 53px;
+      padding: 19px 20px; } }
   .fixed .logo {
-    width: 147px;
-    height: 19px;
-    margin: 0 auto; }
+    width: 240px;
+    margin: 0 auto;
+    display: inline-block; }
+    @media only screen and (max-width: 992px) {
+      .fixed .logo {
+        width: 187px; } }
     @media only screen and (max-width: 768px) {
       .fixed .logo {
         margin: 0; } }
     @media only screen and (max-width: 500px) {
       .fixed .logo {
-        width: 100px; } }
+        width: 145px; } }
     .fixed .logo img {
       width: 100%;
       height: auto; }
@@ -130,7 +132,8 @@ body {
     position: absolute;
     top: 14px;
     right: 20px;
-    padding: 13px 20px 12px; }
+    padding: 13px 20px 12px;
+    display: none; }
     @media only screen and (max-width: 1250px) {
       .fixed .header-register-btn {
         right: 20px; } }
@@ -145,20 +148,23 @@ body {
 
 .welcome-block {
   background: fixed url("../images/main-bg.jpg") no-repeat 50% 0/cover;
-  height: 100vh;
+  height: 637px;
   position: relative;
   display: flex;
   align-items: flex-end;
   padding-bottom: 100px; }
   @media only screen and (max-width: 992px) {
     .welcome-block {
-      padding-bottom: 112px; } }
+      padding-bottom: 112px;
+      height: 697px; } }
   @media only screen and (max-width: 768px) {
     .welcome-block {
-      padding-bottom: 90px; } }
+      padding-bottom: 90px;
+      height: 550px; } }
   @media only screen and (max-width: 500px) {
     .welcome-block {
-      padding-bottom: 55px; } }
+      padding-bottom: 55px;
+      height: 405px; } }
   .welcome-block:before {
     content: "";
     background: rgba(13, 153, 218, 0);
@@ -187,25 +193,31 @@ body {
         padding: 0 36px !important; } }
     @media only screen and (max-width: 768px) {
       .welcome-block .welcome-block-content {
-        margin-left: 0; } }
+        margin-left: 0;
+        padding: 0 20px !important; } }
     .welcome-block .welcome-block-content .welcome-title {
       font-family: "Abril Fatface", sans-serif;
-      font-size: 106px;
+      font-size: 82px;
       letter-spacing: -0.02em;
-      line-height: 115px;
+      line-height: 90px;
       color: #FFF;
       font-weight: 400; }
+      @media only screen and (max-width: 1250px) {
+        .welcome-block .welcome-block-content .welcome-title {
+          font-size: 77px; } }
       @media only screen and (max-width: 992px) {
         .welcome-block .welcome-block-content .welcome-title {
-          font-size: 86px; } }
+          font-size: 59px; } }
       @media only screen and (max-width: 768px) {
         .welcome-block .welcome-block-content .welcome-title {
-          font-size: 66px;
-          line-height: 70px; } }
+          font-size: 55px;
+          line-height: 55px; }
+          .welcome-block .welcome-block-content .welcome-title span {
+            display: block; } }
       @media only screen and (max-width: 500px) {
         .welcome-block .welcome-block-content .welcome-title {
-          font-size: 46px;
-          line-height: 50px; } }
+          font-size: 44px;
+          line-height: 45px; } }
     .welcome-block .welcome-block-content p {
       font-size: 38px;
       color: #FFF;
@@ -250,8 +262,8 @@ body {
         padding-bottom: 60px; } }
     @media only screen and (max-width: 500px) {
       .stats-wrap .stats {
-        padding: 14px 24px 60px;
-        margin-bottom: -37px; } }
+        padding: 14px 24px 50px;
+        margin-bottom: -27px; } }
     .stats-wrap .stats .top-line {
       display: flex;
       justify-content: space-between;
@@ -312,9 +324,6 @@ body {
         left: 0;
         position: absolute;
         top: 0; }
-        @media only screen and (max-width: 992px) {
-          .stats-wrap .stats .progress-wrap .progress-bar {
-            left: 96%; } }
     .stats-wrap .stats .count-data {
       display: flex;
       justify-content: space-between; }
@@ -389,7 +398,7 @@ body {
         @media only screen and (max-width: 500px) {
           .stats-wrap .stats .count-data .investors,
           .stats-wrap .stats .count-data .days {
-            margin-right: 30px; } }
+            margin-right: 35px; } }
       .stats-wrap .stats .count-data .funded {
         margin-left: auto;
         text-align: right; }
@@ -1043,7 +1052,7 @@ body {
     margin: -57px auto 0;
     width: 816px;
     background: #FFF;
-    padding: 70px 180px 75px;
+    padding: 54px 180px 75px;
     text-align: center;
     display: none;
     -webkit-box-shadow: 0 42px 94px 0 rgba(26, 26, 26, 0.08);
@@ -1283,18 +1292,13 @@ body {
         right: 0; }
         .form-wrap .register-form .input-wrap .background-select:before,
         .form-wrap .register-form .input-wrap .background-select2:before {
-          content: "";
+          content: "";
           font-family: fontello;
-          color: rgba(26, 26, 28, 0.7);
+          color: #1A1A1C;
           position: absolute;
           top: 20px;
           right: 15px;
-          font-size: 25px;
-          opacity: 0.3;
-          -webkit-transition: transform 0.2s linear;
-          -moz-transition: transform 0.2s linear;
-          -o-transition: transform 0.2s linear;
-          transition: transform 0.2s linear; }
+          font-size: 20px; }
         @media only screen and (max-width: 500px) {
           .form-wrap .register-form .input-wrap .background-select,
           .form-wrap .register-form .input-wrap .background-select2 {
@@ -1305,8 +1309,8 @@ body {
             left: 0; }
             .form-wrap .register-form .input-wrap .background-select:before,
             .form-wrap .register-form .input-wrap .background-select2:before {
-              top: auto;
-              bottom: 10px; } }
+              top: 17px;
+              font-size: 17px; } }
       .form-wrap .register-form .input-wrap .clicked:before {
         transform: rotate(180deg);
         -webkit-transform: rotate(180deg);
@@ -1338,6 +1342,7 @@ body {
         -moz-appearance: none;
         appearance: none;
         border-bottom: 4px solid transparent;
+        cursor: pointer;
         -moz-border-radius: 0;
         -webkit-border-radius: 0;
         -khtml-border-radius: 0;
@@ -1417,7 +1422,13 @@ body {
       left: 0;
       right: 0;
       margin: 0 auto;
-      width: 160px; }
+      width: 160px;
+      -moz-border-radius: 0;
+      -webkit-border-radius: 0;
+      -khtml-border-radius: 0;
+      -o-border-radius: 0;
+      -ms-border-radius: 0;
+      border-radius: 0; }
       @media only screen and (max-width: 500px) {
         .form-wrap .register-form .form-btn,
         .form-wrap .register-form .continue-btn {

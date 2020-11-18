@@ -71,7 +71,8 @@
 .icon-arrow-down:before { content: '\e801'; } /* '' */
 .icon-arrow-left:before { content: '\e802'; } /* '' */
 .icon-arrow-right:before { content: '\e803'; } /* '' */
+.icon-burger:before { content: '\e804'; } /* '' */
 .icon-check:before { content: '\e805'; } /* '' */
 .icon-close:before { content: '\e806'; } /* '' */
 .icon-success:before { content: '\e807'; } /* '' */
-.icon-burger:before { content: '\e808'; } /* '' */
+.icon-dropdown:before { content: '\e808'; } /* '' */
