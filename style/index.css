@@ -96,17 +96,18 @@ body {
   background: #FFF;
   height: 68px;
   padding: 22px 0;
+  text-align: center;
   -webkit-box-shadow: 0 0 40px 0 rgba(26, 26, 26, 0.12);
   -moz-box-shadow: 0 0 40px 0 rgba(26, 26, 26, 0.12);
-  box-shadow: 0 0 40px 0 rgba(26, 26, 26, 0.12);
-  text-align: center; }
+  box-shadow: 0 0 40px 0 rgba(26, 26, 26, 0.12); }
   @media only screen and (max-width: 992px) {
     .fixed {
       padding: 25px 0; } }
   @media only screen and (max-width: 768px) {
     .fixed {
       height: 60px;
-      padding: 22px 20px; } }
+      padding: 22px 20px;
+      text-align: left; } }
   @media only screen and (max-width: 500px) {
     .fixed {
       height: 53px;
@@ -146,26 +147,34 @@ body {
         font-size: 12px;
         padding: 11px 15px 10px; } }
 
-.welcome-block {
-  background: fixed url("../images/main-bg.jpg") no-repeat 50% 0/cover;
+#go {
+  position: absolute;
+  top: 0; }
+
+.welcome-bg {
+  background: url("../images/main-bg.jpg") no-repeat 50% 20%/cover;
   height: 637px;
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-  padding-bottom: 100px; }
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 0; }
+  @media only screen and (min-width: 2000px) and (max-width: 2550px) {
+    .welcome-bg {
+      height: 800px; } }
+  @media only screen and (max-width: 1250px) {
+    .welcome-bg {
+      background-position: 50% 0; } }
   @media only screen and (max-width: 992px) {
-    .welcome-block {
-      padding-bottom: 112px;
+    .welcome-bg {
       height: 697px; } }
   @media only screen and (max-width: 768px) {
-    .welcome-block {
-      padding-bottom: 90px;
+    .welcome-bg {
       height: 550px; } }
   @media only screen and (max-width: 500px) {
-    .welcome-block {
-      padding-bottom: 55px;
+    .welcome-bg {
       height: 405px; } }
-  .welcome-block:before {
+  .welcome-bg:before {
     content: "";
     background: rgba(13, 153, 218, 0);
     background: -moz-linear-gradient(top, rgba(13, 153, 218, 0) 0%, #0d99da 100%);
@@ -181,6 +190,28 @@ body {
     left: 0;
     right: 0;
     opacity: 0.5; }
+
+.welcome-block {
+  margin-top: 379px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 100px; }
+  @media only screen and (min-width: 2000px) and (max-width: 2550px) {
+    .welcome-block {
+      margin-top: 644px; } }
+  @media only screen and (max-width: 992px) {
+    .welcome-block {
+      padding-bottom: 112px;
+      margin-top: 438px; } }
+  @media only screen and (max-width: 768px) {
+    .welcome-block {
+      padding-bottom: 90px;
+      margin-top: 344px; } }
+  @media only screen and (max-width: 500px) {
+    .welcome-block {
+      padding-bottom: 55px;
+      margin-top: 272px; } }
   .welcome-block .welcome-block-content {
     position: relative; }
     @media only screen and (max-width: 1250px) {
@@ -197,27 +228,24 @@ body {
         padding: 0 20px !important; } }
     .welcome-block .welcome-block-content .welcome-title {
       font-family: "Abril Fatface", sans-serif;
-      font-size: 82px;
+      font-size: 106px;
       letter-spacing: -0.02em;
-      line-height: 90px;
+      line-height: 115px;
       color: #FFF;
       font-weight: 400; }
-      @media only screen and (max-width: 1250px) {
-        .welcome-block .welcome-block-content .welcome-title {
-          font-size: 77px; } }
       @media only screen and (max-width: 992px) {
         .welcome-block .welcome-block-content .welcome-title {
-          font-size: 59px; } }
+          font-size: 86px; } }
       @media only screen and (max-width: 768px) {
         .welcome-block .welcome-block-content .welcome-title {
-          font-size: 55px;
-          line-height: 55px; }
+          font-size: 66px;
+          line-height: 70px; }
           .welcome-block .welcome-block-content .welcome-title span {
             display: block; } }
       @media only screen and (max-width: 500px) {
         .welcome-block .welcome-block-content .welcome-title {
-          font-size: 44px;
-          line-height: 45px; } }
+          font-size: 46px;
+          line-height: 50px; } }
     .welcome-block .welcome-block-content p {
       font-size: 38px;
       color: #FFF;
@@ -233,6 +261,11 @@ body {
         .welcome-block .welcome-block-content p {
           font-size: 22px;
           margin-top: 3px; } }
+
+.wrap-bg {
+  background: #FFF;
+  position: relative;
+  padding-top: 1px; }
 
 .stats-wrap {
   margin-top: -55px;

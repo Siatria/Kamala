@@ -95,13 +95,14 @@ body
   background: $color-white
   height: 68px
   padding: 22px 0
-  +box-shadow(0 0 40px 0,rgba(26,26,26,.12))
   text-align: center
+  +box-shadow(0 0 40px 0,rgba(26,26,26,.12))
   +respond-to(tablet)
     padding: 25px 0
   +respond-to(small-tablet)
     height: 60px
     padding: 22px 20px
+    text-align: left
   +respond-to(mobile)
     height: 53px
     padding: 19px 20px
@@ -134,21 +135,27 @@ body
       font-size: 12px
       padding: 11px 15px 10px
 
-.welcome-block
-  background: fixed url("../images/main-bg.jpg") no-repeat 50% 0 / cover
+#go 
+  position: absolute
+  top: 0
+
+.welcome-bg
+  background: url("../images/main-bg.jpg") no-repeat 50% 20% / cover
   height: 637px
-  position: relative
-  display: flex
-  align-items: flex-end
-  padding-bottom: 100px
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  z-index: 0
+  @media only screen and (min-width: 2000px) and (max-width: 2550px)
+    height: 800px
+  +respond-to(desktop)
+    background-position: 50% 0
   +respond-to(tablet)
-    padding-bottom: 112px
     height: 697px
   +respond-to(small-tablet)
-    padding-bottom: 90px
     height: 550px
   +respond-to(mobile)
-    padding-bottom: 55px
     height: 405px
   &:before
     content: ''
@@ -159,6 +166,24 @@ body
     left: 0
     right: 0
     opacity: .5
+
+.welcome-block
+  margin-top: 379px
+  position: relative
+  display: flex
+  align-items: flex-end
+  padding-bottom: 100px
+  @media only screen and (min-width: 2000px) and (max-width: 2550px)
+    margin-top: 644px
+  +respond-to(tablet)
+    padding-bottom: 112px
+    margin-top: 438px
+  +respond-to(small-tablet)
+    padding-bottom: 90px
+    margin-top: 344px
+  +respond-to(mobile)
+    padding-bottom: 55px
+    margin-top: 272px
   .welcome-block-content
     position: relative
     +respond-to(desktop)
@@ -172,23 +197,21 @@ body
       padding: 0 20px!important
     .welcome-title
       font-family: $font-abril
-      font-size: 82px
+      font-size: 106px
       letter-spacing: -0.02em
-      line-height: 90px
+      line-height: 115px
       color: $color-white
       font-weight: 400
-      +respond-to(desktop)
-        font-size: 77px
       +respond-to(tablet)
-        font-size: 59px
+        font-size: 86px
       +respond-to(small-tablet)
-        font-size: 55px
-        line-height: 55px
+        font-size: 66px
+        line-height: 70px
         span
           display: block
       +respond-to(mobile)
-        font-size: 44px
-        line-height: 45px
+        font-size: 46px
+        line-height: 50px
     p
       font-size: 38px
       color: $color-white
@@ -201,6 +224,10 @@ body
       +respond-to(mobile)
         font-size: 22px
         margin-top: 3px
+.wrap-bg
+  background: $color-white
+  position: relative
+  padding-top: 1px
 .stats-wrap
   margin-top: -55px
   position: relative
