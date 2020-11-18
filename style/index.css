@@ -3,6 +3,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300;1,400&display=swap");
 body {
   font-family: "Lato", sans-serif; }
+  body ::selection {
+    background: #10AEE5;
+    color: #FFF; }
+  body ::-moz-selection {
+    background: #10AEE5; }
+  body ::-webkit-selection {
+    background: #10AEE5; }
 
 .content-width-12 {
   width: 1180px;

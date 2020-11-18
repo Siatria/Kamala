@@ -16,6 +16,13 @@ $input-bg: #F6F6F6
 
 body
   font-family: $font-lato-reg
+  ::selection
+    background: $color-blue
+    color: $color-white
+  ::-moz-selection
+    background: $color-blue
+  ::-webkit-selection
+    background: $color-blue
 
 .content-width-12
   width: 1180px
@@ -135,7 +142,7 @@ body
       font-size: 12px
       padding: 11px 15px 10px
 
-#go 
+#go
   position: absolute
   top: 0
 
