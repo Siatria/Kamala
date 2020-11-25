@@ -598,11 +598,40 @@ body {
   @media only screen and (max-width: 500px) {
     .opportunity {
       padding: 51px 0 30px; } }
+  .opportunity .content-width-10 .opportunity-text {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 37px;
+    width: 90%; }
+    @media only screen and (max-width: 992px) {
+      .opportunity .content-width-10 .opportunity-text {
+        padding-left: 120px;
+        flex-direction: column;
+        margin-top: 35px;
+        width: 80%; } }
+    @media only screen and (max-width: 768px) {
+      .opportunity .content-width-10 .opportunity-text {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 16px; } }
+    .opportunity .content-width-10 .opportunity-text p {
+      width: 48%; }
+      @media only screen and (max-width: 992px) {
+        .opportunity .content-width-10 .opportunity-text p {
+          width: 100%;
+          margin-bottom: 16px; }
+          .opportunity .content-width-10 .opportunity-text p:last-child {
+            margin-bottom: 0; } }
+      .opportunity .content-width-10 .opportunity-text p span {
+        display: block;
+        margin-top: 16px;
+        color: rgba(26, 26, 28, 0.7);
+        font-weight: 400; }
   .opportunity .content-width-10 .opportunity-list {
-    margin-top: 45px; }
+    margin-top: 60px; }
     @media only screen and (max-width: 992px) {
       .opportunity .content-width-10 .opportunity-list {
-        margin-top: 57px; } }
+        margin-top: 52px; } }
     @media only screen and (max-width: 500px) {
       .opportunity .content-width-10 .opportunity-list {
         margin-top: 33px; } }
@@ -698,21 +727,21 @@ body {
         @media only screen and (max-width: 992px) {
           .opportunity .content-width-10 .wrap .opportunity-img .img {
             height: 152px; } }
-    .opportunity .content-width-10 .wrap .opportunity-text {
+    .opportunity .content-width-10 .wrap .opportunity-img-text {
       width: 480px;
       margin-top: -9px; }
       @media only screen and (max-width: 1250px) {
-        .opportunity .content-width-10 .wrap .opportunity-text {
+        .opportunity .content-width-10 .wrap .opportunity-img-text {
           width: 50%; } }
       @media only screen and (max-width: 992px) {
-        .opportunity .content-width-10 .wrap .opportunity-text {
+        .opportunity .content-width-10 .wrap .opportunity-img-text {
           margin-top: 35px;
           width: 65%; } }
       @media only screen and (max-width: 768px) {
-        .opportunity .content-width-10 .wrap .opportunity-text {
+        .opportunity .content-width-10 .wrap .opportunity-img-text {
           width: 100%; } }
       @media only screen and (max-width: 500px) {
-        .opportunity .content-width-10 .wrap .opportunity-text {
+        .opportunity .content-width-10 .wrap .opportunity-img-text {
           margin-top: 23px; } }
 
 .reasons {

@@ -473,10 +473,36 @@ body
   +respond-to(mobile)
     padding: 51px 0 30px
   .content-width-10
-    .opportunity-list
-      margin-top: 45px
+    .opportunity-text
+      display: flex
+      justify-content: space-between
+      margin-top: 37px
+      width: 90%
       +respond-to(tablet)
-        margin-top: 57px
+        padding-left: 120px
+        flex-direction: column
+        margin-top: 35px
+        width: 80%
+      +respond-to(small-tablet)
+        width: 100%
+        padding-left: 0
+        margin-top: 16px
+      p
+        width: 48%
+        +respond-to(tablet)
+          width: 100%
+          margin-bottom: 16px
+          &:last-child
+            margin-bottom: 0
+        span
+          display: block
+          margin-top: 16px
+          color: $text-grey-lighten
+          font-weight: 400
+    .opportunity-list
+      margin-top: 60px
+      +respond-to(tablet)
+        margin-top: 52px
       +respond-to(mobile)
         margin-top: 33px
       .opportunity-item
@@ -557,7 +583,7 @@ body
           background-size: cover
           +respond-to(tablet)
             height: 152px
-      .opportunity-text
+      .opportunity-img-text
         width: 480px
         margin-top: -9px
         +respond-to(desktop)

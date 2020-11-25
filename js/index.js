@@ -47,18 +47,6 @@ $(document).ready(function () {
     }
   })
 
-  //Parallax-viewport
-  function isInViewport(node) {
-    let rect = node.getBoundingClientRect()
-    return (
-      (rect.height > 0 || rect.width > 0) &&
-      rect.bottom >= 0 &&
-      rect.right >= 0 &&
-      rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.left <= (window.innerWidth || document.documentElement.clientWidth)
-    )
-  }
-
   //Stats
   let as = 0
   function number_to(id,from,to,duration) {
@@ -123,20 +111,5 @@ $(document).ready(function () {
       (scroller > fixedHeaderTop - 100) &&
       (scroller < fixedHeaderBottom - 400) ?
         'In': 'Out')](300)
-
-    //Parallax
-    let scrolled = $(window).scrollTop()
-    $('.parallax').each(function(index, element) {
-      let initY = $(this).offset().top
-      let height = $(this).height()
-      let endY = initY + $(this).height()
-
-      let visible = isInViewport(this)
-      if(visible) {
-        let diff = scrolled - initY
-        let ratio = Math.round((diff / height) * 100)
-        $(this).css('background-position','center ' + parseInt(-(ratio * 1.5)) + 'px')
-      }
-    })
   })
 })
